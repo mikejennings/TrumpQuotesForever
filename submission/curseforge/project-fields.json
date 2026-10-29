@@ -1,0 +1,22 @@
+{
+  "name": "Trump Quotes",
+  "summary": "Browse 1,013 Donald Trump quotes, choose a chat channel, and configure an optional random posting timer for WoW Forever.",
+  "game": "World of Warcraft",
+  "projectClass": "Addons",
+  "primaryCategory": "Chat & Communication",
+  "publicMaintainer": "TQ Maintainers",
+  "licenseSelection": "All Rights Reserved",
+  "licenseNote": "No new open-source license is granted by this preparation. The license selection does not claim ownership of third-party quotations or linked source material.",
+  "gameFlavor": "Forever",
+  "interface": 16001,
+  "gameVersionSelection": "Choose the actual supported Forever version offered by the upload form; interface 16001 is not a CurseForge version ID.",
+  "initialFileType": "Beta",
+  "manualRelease": true,
+  "projectId": null,
+  "fileDisplayName": "Trump Quotes 0.8.0 (Forever)",
+  "uploadFile": "TrumpQuotesForever-0.8.0.zip",
+  "iconFile": "icon-400.png",
+  "descriptionFile": "listing.md",
+  "changelogFile": "changelog.md",
+  "moderatorNotesFile": "moderator-notes.md"
+}

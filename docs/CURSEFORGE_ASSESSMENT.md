@@ -5,7 +5,11 @@ v0.8.0 install package. This document is research and preparation, not a claim o
 moderator approval. No project has been submitted, account created, license
 applied, upload token installed, or CurseForge publishing enabled.
 
-## Recommendation
+## Current decision
+
+The user explicitly chose to retain all 1,013 quotes and existing behavior and prepare v0.8.0 as-is for CurseForge moderation. The earlier curated/manual-send recommendation below is superseded; it is historical risk assessment, not a required change or a moderation decision. No entries were removed. The current materials are in [the submission kit](../submission/curseforge/README.md), and the listing now describes the actual unfiltered build. Project artwork and upload copy are prepared; no submission has been made. References below to a missing icon or a proposed future listing reflect the earlier assessment.
+
+## Earlier recommendation — superseded
 
 Do not submit the current unfiltered, unattended-public-chat edition as-is.
 Prepare a curated edition whose random timer offers a local reminder/preview and
