@@ -1,0 +1,792 @@
+[
+  {
+    "number": 121,
+    "quote": "Little Marco Rubio, the lightweight no show Senator from Florida is just another Washington politician.",
+    "target": "Marco",
+    "date": "2016-02-28",
+    "source": "https://twitter.com/realDonaldTrump/status/704000708236996608",
+    "kind": "tweet excerpt",
+    "tweet_id": "704000708236996608",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 122,
+    "quote": "Little Marco, his State Chairman, & their minions are working overtime-trying to rig the vote.",
+    "target": "Marco",
+    "date": "2016-03-12",
+    "source": "https://twitter.com/realDonaldTrump/status/708715781199044609",
+    "kind": "tweet excerpt",
+    "tweet_id": "708715781199044609",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 123,
+    "quote": "Lyin' Ted Cruz should not be allowed to win there - Mormons don't like LIARS!",
+    "target": "Ted Cruz",
+    "date": "2016-03-18",
+    "source": "https://twitter.com/realDonaldTrump/status/710920670608236544",
+    "kind": "tweet excerpt",
+    "tweet_id": "710920670608236544",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 124,
+    "quote": "Jeb Bush is desperate - strongly in favor of #CommonCore and very weak on illegal immigration.",
+    "target": "Jeb",
+    "date": "2016-02-08",
+    "source": "https://twitter.com/realDonaldTrump/status/696733541313474566",
+    "kind": "tweet excerpt",
+    "tweet_id": "696733541313474566",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 125,
+    "quote": "Last time lightweight @JebBush tried to knock off @marcorubio he made a total fool of himself.",
+    "target": "Jeb",
+    "date": "2016-02-12",
+    "source": "https://twitter.com/realDonaldTrump/status/698242702194954240",
+    "kind": "tweet excerpt",
+    "tweet_id": "698242702194954240",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 126,
+    "quote": "Crooked Hillary is spending tremendous amounts of Wall Street money on false ads against me.",
+    "target": "Hillary",
+    "date": "2016-05-21",
+    "source": "https://twitter.com/realDonaldTrump/status/733838909805887488",
+    "kind": "tweet excerpt",
+    "tweet_id": "733838909805887488",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 127,
+    "quote": "Crazy Joe Biden is trying to act like a tough guy.",
+    "target": "Biden",
+    "date": "2018-03-22",
+    "source": "https://twitter.com/realDonaldTrump/status/976765417908776963",
+    "kind": "tweet excerpt",
+    "tweet_id": "976765417908776963",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 128,
+    "quote": "\"Little\" Michael Bloomberg, who never had the guts to run for president, knows nothing about me.",
+    "target": "Bloomberg",
+    "date": "2016-07-29",
+    "source": "https://twitter.com/realDonaldTrump/status/759025610249216000",
+    "kind": "tweet excerpt",
+    "tweet_id": "759025610249216000",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 129,
+    "quote": "He used Sloppy Steve Bannon, who cried when he got fired and begged for his job.",
+    "target": "Bannon",
+    "date": "2018-01-06",
+    "source": "https://twitter.com/realDonaldTrump/status/949498795074736129",
+    "kind": "tweet excerpt",
+    "tweet_id": "949498795074736129",
+    "cross_checked_archive": false
+  },
+  {
+    "number": 130,
+    "quote": "Goofy Elizabeth Warren lied when she says I want to abolish the Federal Minimum Wage.",
+    "target": "Warren",
+    "date": "2016-05-11",
+    "source": "https://twitter.com/realDonaldTrump/status/730493295550468096",
+    "kind": "tweet excerpt",
+    "tweet_id": "730493295550468096",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 131,
+    "quote": "Goofy Elizabeth Warren is now using the woman's card like her friend crooked Hillary.",
+    "target": "Warren",
+    "date": "2016-05-11",
+    "source": "https://twitter.com/realDonaldTrump/status/730482068753424385",
+    "kind": "tweet excerpt",
+    "tweet_id": "730482068753424385",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 132,
+    "quote": "The Failing @nytimes set Liddle' Bob Corker up by recording his conversation.",
+    "target": "Corker",
+    "date": "2017-10-10",
+    "source": "https://twitter.com/realDonaldTrump/status/917734186848579584",
+    "kind": "tweet excerpt",
+    "tweet_id": "917734186848579584",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 133,
+    "quote": "Corker is the incompetent head of the Foreign Relations Committee, & look how poorly the U.S. has done.",
+    "target": "Corker",
+    "date": "2017-10-24",
+    "source": "https://twitter.com/realDonaldTrump/status/922828476872318976",
+    "kind": "tweet excerpt",
+    "tweet_id": "922828476872318976",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 134,
+    "quote": "Senator Dicky Durbin totally misrepresented what was said at the DACA meeting.",
+    "target": "Durbin",
+    "date": "2018-01-15",
+    "source": "https://twitter.com/realDonaldTrump/status/953000902331453442",
+    "kind": "tweet excerpt",
+    "tweet_id": "953000902331453442",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 135,
+    "quote": "Not a fan of Jeff Flake, weak on crime & border!",
+    "target": "Flake",
+    "date": "2017-08-23",
+    "source": "https://twitter.com/realDonaldTrump/status/900346953120141312",
+    "kind": "tweet excerpt",
+    "tweet_id": "900346953120141312",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 136,
+    "quote": "Comey was a terrible and corrupt leader who inflicted great pain on the FBI!",
+    "target": "Comey",
+    "date": "2018-05-24",
+    "source": "https://twitter.com/realDonaldTrump/status/999629710370983937",
+    "kind": "tweet excerpt",
+    "tweet_id": "999629710370983937",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 137,
+    "quote": "I am convinced that sleepy eyes Chuck Todd was only a placeholder for someone else at Meet the Press.",
+    "target": "Chuck Todd",
+    "date": "2015-01-27",
+    "source": "https://twitter.com/realDonaldTrump/status/560077599242977280",
+    "kind": "tweet excerpt",
+    "tweet_id": "560077599242977280",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 138,
+    "quote": "Finally, Liddle' Adam Schiff, the leakin' monster of no control, is now blaming the Obama Administration for Russian meddling in the 2016 Election.",
+    "target": "Schiff",
+    "date": "2018-02-18",
+    "source": "https://twitter.com/realDonaldTrump/status/965199840471810049",
+    "kind": "tweet excerpt",
+    "tweet_id": "965199840471810049",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 139,
+    "quote": "Wacky Omarosa, who got fired 3 times on the Apprentice, now got fired for the last time.",
+    "target": "Omarosa",
+    "date": "2018-08-13",
+    "source": "https://twitter.com/realDonaldTrump/status/1028996374174593025",
+    "kind": "tweet excerpt",
+    "tweet_id": "1028996374174593025",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 140,
+    "quote": "Lebron James was just interviewed by the dumbest man on television, Don Lemon.",
+    "target": "Don Lemon",
+    "date": "2018-08-04",
+    "source": "https://twitter.com/realDonaldTrump/status/1025586524782559232",
+    "kind": "tweet excerpt",
+    "tweet_id": "1025586524782559232",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 141,
+    "quote": "Crazy Joe Scarborough and dumb as a rock Mika are not bad people, but their low rated show is dominated by their NBC bosses.",
+    "target": "Scarborough",
+    "date": "2017-07-01",
+    "source": "https://twitter.com/realDonaldTrump/status/881140479454310401",
+    "kind": "tweet excerpt",
+    "tweet_id": "881140479454310401",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 142,
+    "quote": "Mitt Romney had his chance to beat a failed president but he choked like a dog.",
+    "target": "Romney",
+    "date": "2016-06-11",
+    "source": "https://twitter.com/realDonaldTrump/status/741590381503086592",
+    "kind": "tweet excerpt",
+    "tweet_id": "741590381503086592",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 143,
+    "quote": "I told Rex Tillerson, our wonderful Secretary of State, that he is wasting his time trying to negotiate with Little Rocket Man...",
+    "target": "Tillerson",
+    "date": "2017-10-01",
+    "source": "https://twitter.com/realDonaldTrump/status/914497877543735296",
+    "kind": "tweet excerpt",
+    "tweet_id": "914497877543735296",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 144,
+    "quote": "What would Bolton, one of the dumbest people in Washington, know?",
+    "target": "Bolton",
+    "date": "2020-12-20",
+    "source": "https://twitter.com/realDonaldTrump/status/1340523358551732233",
+    "kind": "tweet excerpt",
+    "tweet_id": "1340523358551732233",
+    "cross_checked_archive": false
+  },
+  {
+    "number": 145,
+    "quote": "Alec Baldwin, whose dying mediocre career was saved by his terrible impersonation of me on SNL, now says playing me was agony.",
+    "target": "Baldwin",
+    "date": "2018-03-02",
+    "source": "https://twitter.com/realDonaldTrump/status/969529668234829825",
+    "kind": "tweet excerpt",
+    "tweet_id": "969529668234829825",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 146,
+    "quote": "Rosie is crude, rude, obnoxious and dumb - other than that I like her very much!",
+    "target": "Rosie",
+    "date": "2014-07-11",
+    "source": "https://twitter.com/realDonaldTrump/status/487553677247250432",
+    "kind": "tweet excerpt",
+    "tweet_id": "487553677247250432",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 147,
+    "quote": "Dopey @billmaher is in for a lot of trouble--I hope he has $5 million (for charity).",
+    "target": "Maher",
+    "date": "2013-01-14",
+    "source": "https://twitter.com/realDonaldTrump/status/290894428296597504",
+    "kind": "tweet excerpt",
+    "tweet_id": "290894428296597504",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 148,
+    "quote": "The liberal clown  @ariannahuff told her minions at the money losing @HuffingtonPost to cover me as enterainment.",
+    "target": "Huffington",
+    "date": "2015-07-18",
+    "source": "https://twitter.com/realDonaldTrump/status/622399905441583104",
+    "kind": "tweet excerpt",
+    "tweet_id": "622399905441583104",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 149,
+    "quote": "Is it possible for @megynkelly to cover anyone but Donald Trump on her terrible show.",
+    "target": "Megyn",
+    "date": "2016-04-02",
+    "source": "https://twitter.com/realDonaldTrump/status/716078699175682053",
+    "kind": "tweet excerpt",
+    "tweet_id": "716078699175682053",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 150,
+    "quote": "Arnold Schwarzenegger isn't voluntarily leaving the Apprentice, he was fired by his bad (pathetic) ratings, not by me.",
+    "target": "Schwarzenegger",
+    "date": "2017-03-04",
+    "source": "https://twitter.com/realDonaldTrump/status/838016045222854656",
+    "kind": "tweet excerpt",
+    "tweet_id": "838016045222854656",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 151,
+    "quote": "Irrelevant clown @KarlRove sweats and shakes nervously on @FoxNews as he talks \"bull\" about me.",
+    "target": "Rove",
+    "date": "2015-07-16",
+    "source": "https://twitter.com/realDonaldTrump/status/621622877092249601",
+    "kind": "tweet excerpt",
+    "tweet_id": "621622877092249601",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 152,
+    "quote": "One of the worst and most boring political pundits on television is @krauthammer.",
+    "target": "Krauthammer",
+    "date": "2015-06-05",
+    "source": "https://twitter.com/realDonaldTrump/status/606670546202411008",
+    "kind": "tweet excerpt",
+    "tweet_id": "606670546202411008",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 153,
+    "quote": "George Will, one of the most overrated political pundits (who lost his way long ago), has left the Republican Party.He's made many bad calls",
+    "target": "George Will",
+    "date": "2016-06-26",
+    "source": "https://twitter.com/realDonaldTrump/status/747027629652443136",
+    "kind": "tweet excerpt",
+    "tweet_id": "747027629652443136",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 154,
+    "quote": "Why does Conde Nast allow dopey Graydon Carter to run bad food restaurants while running failing @VanityFair magazine?",
+    "target": "Graydon",
+    "date": "2013-12-11",
+    "source": "https://twitter.com/realDonaldTrump/status/410777062501126144",
+    "kind": "tweet excerpt",
+    "tweet_id": "410777062501126144",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 155,
+    "quote": "If dummy Bill Kristol actually does get a spoiler to run as an Independent, say good bye to the Supreme Court!",
+    "target": "Kristol",
+    "date": "2016-05-29",
+    "source": "https://twitter.com/realDonaldTrump/status/737056428452630528",
+    "kind": "tweet excerpt",
+    "tweet_id": "737056428452630528",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 156,
+    "quote": "Lindsey Graham is all over T.V., much like failed 47% candidate Mitt Romney.",
+    "target": "Graham",
+    "date": "2016-03-07",
+    "source": "https://twitter.com/realDonaldTrump/status/706812638215303168",
+    "kind": "tweet excerpt",
+    "tweet_id": "706812638215303168",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 157,
+    "quote": "Our very weak and ineffective leader, Paul Ryan, had a bad conference call where his members went wild at his disloyalty.",
+    "target": "Paul Ryan",
+    "date": "2016-10-11",
+    "source": "https://twitter.com/realDonaldTrump/status/785828772423561216",
+    "kind": "tweet excerpt",
+    "tweet_id": "785828772423561216",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 158,
+    "quote": "Bill de Blasio of NYC, considered the worst mayor in the U.S., will supposedly be making an announcement for president today.",
+    "target": "Bill de Blasio",
+    "date": "2019-05-16",
+    "source": "https://twitter.com/realDonaldTrump/status/1129001970654679040",
+    "kind": "tweet excerpt",
+    "tweet_id": "1129001970654679040",
+    "cross_checked_archive": false
+  },
+  {
+    "number": 159,
+    "quote": "Be careful, Lyin' Ted, or I will spill the beans on your wife!",
+    "target": "Heidi Cruz",
+    "date": "2016-03-23",
+    "source": "https://twitter.com/realDonaldTrump/status/712457104515317764",
+    "kind": "tweet excerpt",
+    "tweet_id": "712457104515317764",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 160,
+    "quote": "Low energy Jeb Bush just endorsed a man he truly hates, Lyin' Ted Cruz.",
+    "target": "Jeb Bush / Ted Cruz",
+    "date": "2016-03-23",
+    "source": "https://twitter.com/realDonaldTrump/status/712728075532943361",
+    "kind": "tweet excerpt",
+    "tweet_id": "712728075532943361",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 161,
+    "quote": "Crazy Bernie Sanders is not a fighter. He gives up too easy!",
+    "target": "Bernie Sanders",
+    "date": "2020-05-20",
+    "source": "https://twitter.com/realDonaldTrump/status/1263124870055018501",
+    "kind": "tweet excerpt",
+    "tweet_id": "1263124870055018501",
+    "cross_checked_archive": false
+  },
+  {
+    "number": 162,
+    "quote": "Cryin' Chuck never had what it takes, and never will!",
+    "target": "Chuck Schumer",
+    "date": "2020-01-24",
+    "source": "https://twitter.com/realDonaldTrump/status/1220692336881160193",
+    "kind": "tweet excerpt",
+    "tweet_id": "1220692336881160193",
+    "cross_checked_archive": false
+  },
+  {
+    "number": 163,
+    "quote": "Crazy Nancy should clean up her filthy dirty District & help the homeless there.",
+    "target": "Nancy Pelosi",
+    "date": "2019-12-26",
+    "source": "https://twitter.com/realDonaldTrump/status/1210188790008037376",
+    "kind": "tweet excerpt",
+    "tweet_id": "1210188790008037376",
+    "cross_checked_archive": false
+  },
+  {
+    "number": 164,
+    "quote": "Nervous Nancy is an inherently \"dumb\" person.",
+    "target": "Nancy Pelosi",
+    "date": "2020-04-19",
+    "source": "https://twitter.com/realDonaldTrump/status/1251918194639548417",
+    "kind": "tweet excerpt",
+    "tweet_id": "1251918194639548417",
+    "cross_checked_archive": false
+  },
+  {
+    "number": 165,
+    "quote": "Mini Mike is getting slammed.",
+    "target": "Michael Bloomberg",
+    "date": "2020-02-28",
+    "source": "https://twitter.com/realDonaldTrump/status/1233488317049602048",
+    "kind": "tweet excerpt",
+    "tweet_id": "1233488317049602048",
+    "cross_checked_archive": false
+  },
+  {
+    "number": 166,
+    "quote": "Pocahontas bombed last night!",
+    "target": "Elizabeth Warren",
+    "date": "2016-07-26",
+    "source": "https://twitter.com/realDonaldTrump/status/757919034755076096",
+    "kind": "tweet excerpt",
+    "tweet_id": "757919034755076096",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 167,
+    "quote": "Great, now I can go after Horseface and her 3rd rate lawyer in the Great State of Texas.",
+    "target": "Stormy Daniels",
+    "date": "2018-10-16",
+    "source": "https://twitter.com/realDonaldTrump/status/1052213711295930368",
+    "kind": "tweet excerpt",
+    "tweet_id": "1052213711295930368",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 168,
+    "quote": "So funny to see little Adam Schitt (D-CA)",
+    "target": "Adam Schiff",
+    "date": "2018-11-18",
+    "source": "https://twitter.com/realDonaldTrump/status/1064216956679716864",
+    "kind": "tweet excerpt",
+    "tweet_id": "1064216956679716864",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 169,
+    "quote": "Meryl Streep, one of the most over-rated actresses in Hollywood, doesn't know me but attacked last night at the Golden Globes.",
+    "target": "Meryl Streep",
+    "date": "2017-01-09",
+    "source": "https://twitter.com/realDonaldTrump/status/818419002548568064",
+    "kind": "tweet excerpt",
+    "tweet_id": "818419002548568064",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 170,
+    "quote": "Robert De Niro, a very Low IQ individual, has received to many shots to the head by real boxers in movies.",
+    "target": "Robert De Niro",
+    "date": "2018-06-12",
+    "source": "https://twitter.com/realDonaldTrump/status/1006640689843560448",
+    "kind": "tweet excerpt",
+    "tweet_id": "1006640689843560448",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 171,
+    "quote": "Bette Midler sucked!",
+    "target": "Bette Midler",
+    "date": "2014-03-03",
+    "source": "https://twitter.com/realDonaldTrump/status/440338352068251648",
+    "kind": "tweet excerpt",
+    "tweet_id": "440338352068251648",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 172,
+    "quote": "Kathy Griffin should be ashamed of herself.",
+    "target": "Kathy Griffin",
+    "date": "2017-05-31",
+    "source": "https://twitter.com/realDonaldTrump/status/869874798087819264",
+    "kind": "tweet excerpt",
+    "tweet_id": "869874798087819264",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 173,
+    "quote": "Don Lemon is a lightweight - dumb as a rock",
+    "target": "Don Lemon",
+    "date": "2016-08-10",
+    "source": "https://twitter.com/realDonaldTrump/status/763391459110313984",
+    "kind": "tweet excerpt",
+    "tweet_id": "763391459110313984",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 174,
+    "quote": "Does anybody like Lyin' Ted?",
+    "target": "Ted Cruz",
+    "date": "2016-04-01",
+    "source": "https://twitter.com/realDonaldTrump/status/715973328868085761",
+    "kind": "tweet excerpt",
+    "tweet_id": "715973328868085761",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 175,
+    "quote": "The many losers and haters never have the brains or stamina to become truly successful!",
+    "target": "General insults",
+    "date": "2013-02-19",
+    "source": "https://twitter.com/realDonaldTrump/status/303997422907047936",
+    "kind": "tweet excerpt",
+    "tweet_id": "303997422907047936",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 176,
+    "quote": "Just watched lightweight Marco Rubio lying to a small crowd about my past record.",
+    "target": "Marco Rubio",
+    "date": "2016-02-27",
+    "source": "https://twitter.com/realDonaldTrump/status/703691273455034369",
+    "kind": "tweet excerpt",
+    "tweet_id": "703691273455034369",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 177,
+    "quote": "I will be using Facebook and Twitter to expose dishonest lightweight Senator Marco Rubio.",
+    "target": "Marco Rubio",
+    "date": "2016-03-07",
+    "source": "https://twitter.com/realDonaldTrump/status/706829345143316480",
+    "kind": "tweet excerpt",
+    "tweet_id": "706829345143316480",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 178,
+    "quote": "He's a war hero because he was captured. I like people that weren't captured.",
+    "target": "John McCain",
+    "date": "2015-07-18",
+    "source": "https://politifact.com/article/2015/jul/19/trump-defends-hero-comments-sunday-abc/",
+    "kind": "speech excerpt"
+  },
+  {
+    "number": 179,
+    "quote": "Look at that face. Would anyone vote for that?",
+    "target": "Carly Fiorina",
+    "date": "Published 2015-09-09",
+    "source": "https://fortune.com/2015/09/10/trump-on-fiorina-look-at-that-face-would-anyone-vote-for-that/",
+    "kind": "interview excerpt"
+  },
+  {
+    "number": 180,
+    "quote": "Chris is desperately seeking a TV job, but sadly, no one wants him.",
+    "target": "Chris Christie",
+    "date": "2024-01-12",
+    "source": "https://www.trumpstruth.org/statuses/6332",
+    "kind": "Truth Social excerpt"
+  },
+  {
+    "number": 181,
+    "quote": "Little Marco",
+    "target": "Marco Rubio",
+    "date": "2016-02-28",
+    "source": "https://twitter.com/realDonaldTrump/status/704000708236996608",
+    "kind": "nickname fragment",
+    "tweet_id": "704000708236996608",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 182,
+    "quote": "Lyin' Ted",
+    "target": "Ted Cruz",
+    "date": "2016-03-18",
+    "source": "https://twitter.com/realDonaldTrump/status/710920670608236544",
+    "kind": "nickname fragment",
+    "tweet_id": "710920670608236544",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 183,
+    "quote": "Low energy Jeb Bush",
+    "target": "Jeb Bush",
+    "date": "2016-03-23",
+    "source": "https://twitter.com/realDonaldTrump/status/712728075532943361",
+    "kind": "nickname fragment",
+    "tweet_id": "712728075532943361",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 184,
+    "quote": "Crooked Hillary",
+    "target": "Hillary Clinton",
+    "date": "2016-05-21",
+    "source": "https://twitter.com/realDonaldTrump/status/733838909805887488",
+    "kind": "nickname fragment",
+    "tweet_id": "733838909805887488",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 185,
+    "quote": "Crazy Joe Biden",
+    "target": "Joe Biden",
+    "date": "2018-03-22",
+    "source": "https://twitter.com/realDonaldTrump/status/976765417908776963",
+    "kind": "nickname fragment",
+    "tweet_id": "976765417908776963",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 186,
+    "quote": "\"Little\" Michael Bloomberg",
+    "target": "Michael Bloomberg",
+    "date": "2016-07-29",
+    "source": "https://twitter.com/realDonaldTrump/status/759025610249216000",
+    "kind": "nickname fragment",
+    "tweet_id": "759025610249216000",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 187,
+    "quote": "Sloppy Steve Bannon",
+    "target": "Steve Bannon",
+    "date": "2018-01-06",
+    "source": "https://twitter.com/realDonaldTrump/status/949498795074736129",
+    "kind": "nickname fragment",
+    "tweet_id": "949498795074736129",
+    "cross_checked_archive": false
+  },
+  {
+    "number": 188,
+    "quote": "Goofy Elizabeth Warren",
+    "target": "Elizabeth Warren",
+    "date": "2016-05-11",
+    "source": "https://twitter.com/realDonaldTrump/status/730493295550468096",
+    "kind": "nickname fragment",
+    "tweet_id": "730493295550468096",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 189,
+    "quote": "Liddle' Bob Corker",
+    "target": "Bob Corker",
+    "date": "2017-10-10",
+    "source": "https://twitter.com/realDonaldTrump/status/917734186848579584",
+    "kind": "nickname fragment",
+    "tweet_id": "917734186848579584",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 190,
+    "quote": "Senator Dicky Durbin",
+    "target": "Dick Durbin",
+    "date": "2018-01-15",
+    "source": "https://twitter.com/realDonaldTrump/status/953000902331453442",
+    "kind": "nickname fragment",
+    "tweet_id": "953000902331453442",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 191,
+    "quote": "sleepy eyes Chuck Todd",
+    "target": "Chuck Todd",
+    "date": "2015-01-27",
+    "source": "https://twitter.com/realDonaldTrump/status/560077599242977280",
+    "kind": "nickname fragment",
+    "tweet_id": "560077599242977280",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 192,
+    "quote": "Wacky Omarosa",
+    "target": "Omarosa Manigault Newman",
+    "date": "2018-08-13",
+    "source": "https://twitter.com/realDonaldTrump/status/1028996374174593025",
+    "kind": "nickname fragment",
+    "tweet_id": "1028996374174593025",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 193,
+    "quote": "Crazy Nancy",
+    "target": "Nancy Pelosi",
+    "date": "2019-12-26",
+    "source": "https://twitter.com/realDonaldTrump/status/1210188790008037376",
+    "kind": "nickname fragment",
+    "tweet_id": "1210188790008037376",
+    "cross_checked_archive": false
+  },
+  {
+    "number": 194,
+    "quote": "Nervous Nancy",
+    "target": "Nancy Pelosi",
+    "date": "2020-04-19",
+    "source": "https://twitter.com/realDonaldTrump/status/1251918194639548417",
+    "kind": "nickname fragment",
+    "tweet_id": "1251918194639548417",
+    "cross_checked_archive": false
+  },
+  {
+    "number": 195,
+    "quote": "Mini Mike",
+    "target": "Michael Bloomberg",
+    "date": "2020-02-28",
+    "source": "https://twitter.com/realDonaldTrump/status/1233488317049602048",
+    "kind": "nickname fragment",
+    "tweet_id": "1233488317049602048",
+    "cross_checked_archive": false
+  },
+  {
+    "number": 196,
+    "quote": "Pocahontas",
+    "target": "Elizabeth Warren",
+    "date": "2016-07-26",
+    "source": "https://twitter.com/realDonaldTrump/status/757919034755076096",
+    "kind": "nickname fragment",
+    "tweet_id": "757919034755076096",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 197,
+    "quote": "Little Rocket Man",
+    "target": "Kim Jong Un",
+    "date": "2017-10-01",
+    "source": "https://twitter.com/realDonaldTrump/status/914497877543735296",
+    "kind": "nickname fragment",
+    "tweet_id": "914497877543735296",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 198,
+    "quote": "Lyin' James Comey",
+    "target": "James Comey",
+    "date": "2018-12-07",
+    "source": "https://twitter.com/realDonaldTrump/status/1071009820575186945",
+    "kind": "nickname fragment",
+    "tweet_id": "1071009820575186945",
+    "cross_checked_archive": true
+  },
+  {
+    "number": 199,
+    "quote": "Ron DeSanctimonious",
+    "target": "Ron DeSantis",
+    "date": "2024-01-12",
+    "source": "https://www.trumpstruth.org/statuses/6332",
+    "kind": "nickname fragment"
+  },
+  {
+    "number": 200,
+    "quote": "Birdbrain",
+    "target": "Nikki Haley",
+    "date": "2024-01-12",
+    "source": "https://www.trumpstruth.org/statuses/6332",
+    "kind": "nickname fragment"
+  }
+]

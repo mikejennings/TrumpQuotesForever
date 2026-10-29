@@ -1,0 +1,6 @@
+.DS_Store
+*.zip
+
+# Local ChatGPT project context and synced references.
+/AGENTS.md
+/sources/
