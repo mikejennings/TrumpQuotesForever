@@ -13,6 +13,7 @@ local function Stop()
     running = false
     generation = generation + 1
     if timer then timer:Cancel(); timer = nil end
+    if ns.RefreshSettings then ns.RefreshSettings() end
 end
 
 local function Channel()
@@ -92,16 +93,58 @@ local function Prepare()
     editBox:SetCursorPosition(#message)
 end
 
+local function Start()
+    if blocked then Print("Sending was blocked; use Prepare quote or /reload to retry."); return false end
+    Stop()
+    running = true
+    Schedule()
+    if ns.RefreshSettings then ns.RefreshSettings() end
+    Print("Timer started: " .. db.minimum / 60 .. "-" .. db.maximum / 60 .. " minutes; first attempt after that delay.")
+    return true
+end
+
+local function ApplySettings(channel, low, high)
+    if type(channel) ~= "string" then return false, "Choose a chat channel." end
+    channel = channel:match("^%s*(.-)%s*$")
+    if channel == "" or tonumber(channel) or channel:find("[%c|]") then
+        return false, "Choose a channel by name."
+    end
+    local minimum, maximum = Core.Range(low, high)
+    if not minimum then return false, maximum end
+    local changed = minimum ~= db.minimum or maximum ~= db.maximum
+    -- Validate everything before changing saved settings or the active timer.
+    db.channel, db.minimum, db.maximum = channel, minimum, maximum
+    if running and changed then Stop(); running = true; Schedule() end
+    if ns.RefreshSettings then ns.RefreshSettings() end
+    return true
+end
+
+ns.Controller = {
+    GetState = function()
+        return {channel = db.channel, minimum = db.minimum / 60, maximum = db.maximum / 60,
+            running = not not running, blocked = not not blocked, joined = not not Channel()}
+    end,
+    GetChannels = function()
+        local result, channels = {}, {GetChannelList()}
+        for i = 1, #channels, 3 do
+            if type(channels[i + 1]) == "string" and not channels[i + 2] then
+                result[#result + 1] = {id = channels[i], name = channels[i + 1]}
+            end
+        end
+        return result
+    end,
+    Apply = ApplySettings, Start = Start, Stop = Stop, Prepare = Prepare,
+    Preview = function() local message = Quote(); if message then Print(message) end end,
+}
+
 local function Command(input)
     if not db then return end
     local command, args = input:match("^%s*(%S*)%s*(.-)%s*$")
     command = command:lower()
-    if command == "start" then
-        if blocked then Print("Sending was blocked; use /tq prepare or /reload to retry."); return end
-        Stop()
-        running = true
-        Schedule()
-        Print("Timer started: " .. db.minimum / 60 .. "-" .. db.maximum / 60 .. " minutes; first attempt after that delay.")
+    if (command == "" or command == "settings" or command == "options") and ns.OpenSettings then
+        ns.OpenSettings()
+    elseif command == "start" then
+        Start()
     elseif command == "stop" then
         Stop(); Print("Timer stopped.")
     elseif command == "post" then
@@ -113,22 +156,20 @@ local function Command(input)
         if message then Print(message) end
     elseif command == "channel" and args ~= "" then
         if tonumber(args) then Print("Use the channel name, such as General, not its number."); return end
-        db.channel = args
-        Print("Channel: " .. args)
+        local ok, err = ApplySettings(args, db.minimum / 60, db.maximum / 60)
+        Print(ok and ("Channel: " .. db.channel) or err)
     elseif command == "interval" then
         local low, high = args:match("^(%S+)%s+(%S+)$")
-        local minimum, maximum = Core.Range(low, high)
-        if not minimum then Print(maximum); return end
-        db.minimum, db.maximum = minimum, maximum
-        if running then Stop(); running = true; Schedule() end
-        Print("Random interval: " .. minimum / 60 .. "-" .. maximum / 60 .. " minutes.")
+        local ok, err = ApplySettings(db.channel, low, high)
+        if not ok then Print(err); return end
+        Print("Random interval: " .. db.minimum / 60 .. "-" .. db.maximum / 60 .. " minutes.")
     elseif command == "status" then
         local id = Channel()
         Print((running and "Running" or "Stopped") .. "; " .. db.channel
             .. (id and " (joined)" or " (not joined)") .. "; "
             .. db.minimum / 60 .. "-" .. db.maximum / 60 .. " minutes.")
     else
-        Print("/tq preview | post | prepare | start | stop | status | interval <min> <max> | channel <name>")
+        Print("/tq settings | preview | post | prepare | start | stop | status | interval <min> <max> | channel <name>")
     end
 end
 
@@ -154,5 +195,6 @@ frame:SetScript("OnEvent", function(_, event, name)
     SLASH_TRUMPQUOTESFOREVER1 = "/tq"
     SLASH_TRUMPQUOTESFOREVER2 = "/trumpquotes"
     SlashCmdList.TRUMPQUOTESFOREVER = Command
-    Print("Loaded for Forever. Timer is off. /tq for commands.")
+    if ns.InitSettings then ns.InitSettings() end
+    Print("Loaded for Forever. Timer is off. Click the TQ minimap button for settings.")
 end)

@@ -2,7 +2,7 @@
 ## Title: Trump Quotes Forever
 ## Notes: Random quotes for General chat on WoW Forever.
 ## Author: Mike Jennings
-## Version: 0.6.0
+## Version: 0.7.0
 ## SavedVariables: TrumpQuotesForeverDB
 
 Quotes.lua
@@ -10,4 +10,5 @@ MoreQuotes.lua
 InsultQuotes.lua
 ArchiveQuotes.lua
 Core.lua
+Settings.lua
 TrumpQuotesForever.lua

@@ -1,4 +1,4 @@
-# Trump Quotes Forever — starter 0.6.0
+# Trump Quotes Forever — 0.7.0
 
 Targets **WoW: Forever 1.60.1, Interface 16001**, not Retail or Classic Era.
 No libraries required. 1,012 sourced Trump quotes and nickname fragments, selected randomly without
@@ -11,11 +11,30 @@ Copy the `TrumpQuotesForever` folder directly into your **Forever client's**
 `Interface/AddOns/TrumpQuotesForever/TrumpQuotesForever.toc`.
 Restart the client if it was running, then enable the addon on character selection.
 
-## Try it
+## Settings window
 
+Click the **TQ button beside the minimap**, or open **Settings → AddOns →
+Trump Quotes Forever**. You can also type `/tq` or `/tq settings` to open it.
+
+- Pick a channel from the list of channels you have joined. The list refreshes
+  whenever you open the picker; stored channel names follow zone changes.
+- Enter minimum and maximum minutes, from 1 to 1440. Decimals are allowed.
+- Click **Apply** to save, or **Start timer** to save and begin random attempts.
+  Changing the interval while running cancels the old wait and starts a new one.
+- **Stop timer** stops immediately, even if the fields contain invalid edits.
+- **Preview quote** shows a quote locally. **Prepare quote** uses your saved
+  destination and fills the chat editor so you can press Enter yourself.
+
+Closing the window discards unapplied edits. Opening settings never starts the
+timer or posts a quote. The status shows the saved channel, whether you have
+joined it, and whether the timer is running or blocked by the client.
+
+## Commands
+
+- `/tq` or `/tq settings`: open settings.
 - `/tq preview`: show a random quote only to you.
-- `/tq post`: attempt one quote to General chat.
-- `/tq prepare`: fill the General chat editor; review and press Enter yourself.
+- `/tq post`: attempt one quote to the saved channel.
+- `/tq prepare`: fill the saved channel’s chat editor; review and press Enter yourself.
 - `/tq start`: start random timed send attempts, with the first one after a delay.
 - `/tq stop`: stop immediately.
 - `/tq interval 10 20`: set the random interval in minutes (1–1440).
@@ -39,8 +58,8 @@ may still prevent messages. `/tq prepare` is the manual-send fallback and also
 needs an in-game check on your build. No restriction bypass is included.
 
 Verified locally with Lua 5.1-compatible code and mocked WoW APIs; **not yet tested
-inside Forever**. Check loading, `/tq preview`, `/tq post`, `/tq prepare`, zone
-changes, and `/tq stop` in the client. If the addon is marked out of date, compare
+inside Forever**. Check loading, the minimap launcher, Settings → AddOns, the channel picker,
+Apply/Start/Stop, `/tq post`, `/tq prepare`, and zone changes in the client. If the addon is marked out of date, compare
 its interface number with `/dump select(4, GetBuildInfo())`.
 
 ## Development
@@ -74,3 +93,9 @@ API references checked October 28, 2026:
 - [Forever generated chat API](https://github.com/Gethe/wow-ui-source/blob/forever/Interface/AddOns/Blizzard_APIDocumentationGenerated/ChatInfoDocumentation.lua)
 - [Forever chat editor methods](https://github.com/Gethe/wow-ui-source/blob/forever/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua)
 - [Forever chat utility functions](https://github.com/Gethe/wow-ui-source/blob/forever/Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameUtil.lua)
+
+Settings UI references checked October 28, 2026 against the Forever branch:
+
+- [Settings category registration and opening](https://github.com/Gethe/wow-ui-source/blob/forever/Interface/AddOns/Blizzard_Settings_Shared/Blizzard_Settings.lua)
+- [Channel dropdown API](https://github.com/Gethe/wow-ui-source/blob/forever/Interface/AddOns/Blizzard_SharedXML/Mainline/UIDropDownMenu.lua)
+- [Native input templates](https://github.com/Gethe/wow-ui-source/blob/forever/Interface/AddOns/Blizzard_SharedXML/Shared/InputBox/InputBoxTemplates.xml)
