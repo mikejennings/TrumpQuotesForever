@@ -9,8 +9,10 @@ If the machine misses a run, the next run looks back seven days. Sources can
 be incomplete or delayed; this does not promise every remark or instant updates.
 
 GitHub Actions runs validation, tests, and ZIP packaging on pull requests and
-changes to main. The workflow has read-only repository access. It contains no
-publish, release, merge, push, or CurseForge step. Artifacts are unapproved review
+changes to main. The workflow has read-only repository access. The review workflow contains no
+publish, release, merge, push, or CurseForge step. A separate manual release
+workflow can publish approved main content only after an explicit per-version
+dispatch with confirmation; the daily researcher must never invoke it. Artifacts are unapproved review
 builds, retained for 30 days. The private repository stays private. Existing
 historical commits are not rewritten; access to the account/repository still
 identifies its owner to GitHub and authorized collaborators.
@@ -116,8 +118,10 @@ Open the draft PR, read the linked context, and download the ZIP under the
 **Validate and package review build** workflow. Remove any entry you don't want,
 then run `render` to update generated files. Mark ready and merge only when you
 want to accept the additions. Merging still does not publish a downloadable
-GitHub Release; packaging is available as an Actions artifact only. Any future
-public release needs a separate explicit request.
+GitHub Release. A maintainer may separately request the manual Publish WoW Forever
+addon Action on main with the matching TOC version and publication confirmation.
+The daily automation is not authorized to invoke it. Private releases remain
+private; changing visibility or publishing elsewhere requires a separate request.
 
 ## References
 

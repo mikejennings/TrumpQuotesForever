@@ -102,6 +102,26 @@ class QuoteToolsTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'stale'):
                 tools.package(root, output=root / 'bad.zip')
 
+    def test_release_bundle_targets_forever_and_excludes_review_marker(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            shutil.copytree(tools.ROOT / 'TrumpQuotesForever', root / 'TrumpQuotesForever')
+            shutil.copy(tools.ROOT / 'README.md', root / 'README.md')
+            (root / 'data').mkdir()
+            shutil.copy(tools.ROOT / tools.LEDGER, root / tools.LEDGER)
+            tools.render(root)
+            version = tools.re.search(r'^## Version: (.+)$', (root / 'TrumpQuotesForever/TrumpQuotesForever.toc').read_text(), tools.re.M).group(1)
+            archive = tools.release_bundle(version, root)
+            metadata = json.loads((archive.parent / 'release.json').read_text())['releases'][0]
+            self.assertEqual(metadata['filename'], archive.name)
+            self.assertEqual(metadata['metadata'], [{'flavor': 'forever', 'interface': 16001}])
+            with zipfile.ZipFile(archive) as z:
+                self.assertNotIn('TrumpQuotesForever/REVIEW_ONLY.txt', z.namelist())
+                self.assertIn('TrumpQuotesForever/TrumpQuotesForever.toc', z.namelist())
+            for version in ['9999.0.0', '../invalid', '0.8.0\\nINJECT=value']:
+                with self.assertRaises(ValueError):
+                    tools.release_bundle(version, root)
+
     def test_identifying_metadata_blocks_distribution(self):
         toc = b'## Author: TQ Maintainers\n'
         for data in [b'Author: Jane Example <jane@example.test>', b'/Users/example/private', b'C:\\Users\\example\\private']:

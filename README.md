@@ -4,6 +4,25 @@ Targets **WoW: Forever 1.60.1, Interface 16001**, not Retail or Classic Era.
 No libraries required. 1,013 sourced Trump quotes and nickname fragments, selected randomly without
 immediate repeats. The optional timer waits a random 10–20 minutes between attempts.
 
+## GitHub download and manual releases
+
+The **Publish WoW Forever addon** Action creates a GitHub Release containing an
+install-ready `TrumpQuotesForever-VERSION.zip`, its SHA-256 checksum, and
+`release.json` identifying the package as the **Forever** flavor (Interface 16001).
+Download that ZIP from the release Assets. GitHub's automatic source ZIP/tar.gz
+archives are development snapshots, not the install package.
+
+The repository remains private: GitHub downloads and addon managers need access
+to it, or you can share the install ZIP directly. Forever metadata does not make
+an inaccessible private repository discoverable publicly.
+
+To publish an approved version, open **Actions → Publish WoW Forever addon →
+Run workflow**, choose **main**, enter the TOC version, and explicitly confirm
+publication. Tests and package checks run before a separate publishing job gets
+write permission. Existing release assets are not overwritten. Other branches,
+ordinary pushes, daily research, and PR merges do not trigger publication.
+There is no CurseForge integration.
+
 ## Install
 
 Copy the `TrumpQuotesForever` folder directly into your **Forever client's**

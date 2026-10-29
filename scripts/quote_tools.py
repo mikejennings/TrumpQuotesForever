@@ -195,10 +195,33 @@ def package(root=ROOT, output=None, review=False):
     return destination
 
 
+def release_bundle(version, root=ROOT):
+    """Build an install ZIP plus WoW addon-manager metadata; never upload."""
+    if not re.fullmatch(r"\d+\.\d+\.\d+", version):
+        raise ValueError("Release version must be a three-part numeric version")
+    toc = (root / 'TrumpQuotesForever/TrumpQuotesForever.toc').read_text()
+    actual = re.search(r'^## Version: (.+)$', toc, re.M).group(1)
+    interface = re.search(r'^## Interface: (.+)$', toc, re.M).group(1)
+    if version != actual:
+        raise ValueError("Requested release version must match the TOC")
+    if interface != '16001':
+        raise ValueError("Recheck Forever compatibility metadata before releasing this interface")
+    directory = root / 'dist/release'
+    archive = package(root, output=directory / f'TrumpQuotesForever-{version}.zip')
+    metadata = {'releases': [{
+        'name': 'TrumpQuotesForever', 'version': version, 'filename': archive.name,
+        'nolib': False, 'metadata': [{'flavor': 'forever', 'interface': int(interface)}],
+    }]}
+    (directory / 'release.json').write_text(json.dumps(metadata, indent=2) + '\n')
+    return archive
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
     sub.add_parser('validate')
+    releasing = sub.add_parser('release')
+    releasing.add_argument('--version', required=True)
     rendering = sub.add_parser('render')
     rendering.add_argument('--check', action='store_true')
     adding = sub.add_parser('add')
@@ -219,6 +242,8 @@ def main():
             (ROOT / LEDGER).write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\n')
             render()
             print('Added to local proposal. Commit only to a review branch; do not auto-merge.')
+        elif args.command == 'release':
+            print(release_bundle(args.version))
         else:
             print(package(output=args.output, review=args.review))
     except (ValueError, KeyError, TypeError) as error:

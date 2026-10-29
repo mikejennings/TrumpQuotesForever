@@ -17,6 +17,8 @@ review build** Actions run contains a test ZIP and checksum, retained for 30 day
 Review ZIPs contain `REVIEW_ONLY.txt` and must not be presented as approved releases.
 Human review and merge are required before proposals become part of the main pool.
 Merging does not automatically publish a GitHub Release or upload to CurseForge.
+A separate, manually confirmed GitHub Action can publish an approved main version
+as an install ZIP with a checksum and Forever addon-manager metadata.
 There is no CurseForge integration and no in-game download code.
 
 `DailyQuotes.lua` and `DAILY_SOURCES.md` contain the newer entries; their editable

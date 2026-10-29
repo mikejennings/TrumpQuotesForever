@@ -1,0 +1,113 @@
+name: Publish WoW Forever addon
+
+# A reviewed merge never publishes automatically. An explicit manual dispatch
+# on main with confirmation is required for each version.
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version in the addon's TOC, for example 0.8.0
+        required: true
+        type: string
+      confirm_publish:
+        description: Publish the current main version to GitHub Releases
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ inputs.version }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/main' && inputs.confirm_publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Install Lua test runtimes
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y lua5.1 luajit
+      - name: Validate and test approved main content
+        run: |
+          python3 -m unittest discover -s tests -p 'test_*.py' -v
+          python3 scripts/quote_tools.py validate
+          python3 scripts/quote_tools.py render --check
+          lua5.1 tests/test.lua
+          luajit tests/test.lua
+      - name: Build anonymous install ZIP and Forever metadata
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: python3 scripts/quote_tools.py release --version "$RELEASE_VERSION"
+      - name: Prepare installation and validation notes
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          version = os.environ['RELEASE_VERSION']
+          text = f'''WoW Forever addon, version {version}, Interface 16001.
+
+          Download TrumpQuotesForever-{version}.zip under Assets. Extract the
+          TrumpQuotesForever folder into your Forever client's Interface/AddOns.
+          Use this install ZIP rather than GitHub's automatically generated source archives.
+
+          Click TQ beside the minimap, or open Settings > AddOns > Trump Quotes Forever.
+          The posting timer starts off. Automatic sending depends on client permissions;
+          Prepare quote fills chat for manual sending.
+
+          Includes a SHA-256 checksum and release.json metadata identifying the ZIP as
+          the Forever flavor for compatible addon managers. The repository remains private,
+          so GitHub access is required; the ZIP can be shared separately.
+
+          Python, Lua and LuaJIT tests, generated-file and anonymous package checks passed.
+          Source commit: {os.environ['GITHUB_SHA']}.
+          No CurseForge upload or automatic acceptance of pending quote PRs.
+          '''
+          Path('dist/release/RELEASE_NOTES.md').write_text(text)
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: verified-release-bundle
+          path: dist/release/*
+          if-no-files-found: error
+          retention-days: 30
+
+  publish:
+    needs: verify
+    if: github.ref == 'refs/heads/main' && inputs.confirm_publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: verified-release-bundle
+          path: dist/release
+      - name: Publish verified install assets to GitHub
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_VERSION: ${{ inputs.version }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          if gh api "repos/${GH_REPO}/git/ref/tags/v${RELEASE_VERSION}" --silent 2>/dev/null; then
+            echo "Tag already exists. Use a new TOC version; existing tags are never reused."
+            exit 1
+          fi
+          gh release create "v${RELEASE_VERSION}" \
+            dist/release/*.zip dist/release/*.sha256 dist/release/release.json \
+            --target "$SOURCE_SHA" \
+            --title "Trump Quotes Forever ${RELEASE_VERSION} (WoW Forever)" \
+            --notes-file dist/release/RELEASE_NOTES.md \
+            --latest
