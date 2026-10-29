@@ -9,14 +9,19 @@
   "licenseNote": "No new open-source license is granted by this preparation. The license selection does not claim ownership of third-party quotations or linked source material.",
   "gameFlavor": "Forever",
   "interface": 16001,
-  "gameVersionSelection": "Choose the actual supported Forever version offered by the upload form; interface 16001 is not a CurseForge version ID.",
+  "gameVersionSelection": "WoW Forever 1.60.1",
   "initialFileType": "Beta",
   "manualRelease": true,
-  "projectId": null,
+  "projectId": 1771665,
   "fileDisplayName": "Trump Quotes 0.8.0 (Forever)",
   "uploadFile": "TrumpQuotesForever-0.8.0.zip",
   "iconFile": "icon-400.png",
   "descriptionFile": "listing.md",
   "changelogFile": "changelog.md",
-  "moderatorNotesFile": "moderator-notes.md"
+  "moderatorNotesFile": "moderator-notes.md",
+  "fileId": 9358803,
+  "submissionStatus": "Uploaded; processing at initial confirmation; moderator approval pending",
+  "authorPortalUrl": "https://authors.curseforge.com/#/projects/1771665/files",
+  "projectPreviewUrl": "https://www.curseforge.com/wow/addons/trump-quotes/preview",
+  "distribution": "Allow distribution to 3rd party"
 }

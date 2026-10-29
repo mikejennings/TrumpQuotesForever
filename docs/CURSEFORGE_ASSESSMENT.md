@@ -1,5 +1,7 @@
 # CurseForge readiness assessment
 
+Current status: the unchanged v0.8.0 build was submitted on October 28, 2026 as project 1771665 / file 9358803, Beta for Forever 1.60.1, with manual release after approval. Initial file status: Processing. The historical assessment below predates submission. No quotes were removed, and moderator approval remains pending.
+
 Checked October 28, 2026 against the current main pool of 1,013 quotes and the
 v0.8.0 install package. This document is research and preparation, not a claim of
 moderator approval. No project has been submitted, account created, license

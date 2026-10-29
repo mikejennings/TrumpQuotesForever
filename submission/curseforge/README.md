@@ -1,6 +1,8 @@
 # CurseForge submission kit — version 0.8.0
 
-Status: prepared for upload; not submitted or approved. All 1,013 quotes and existing posting behavior are unchanged.
+Status: submitted to CurseForge on October 28, 2026 (America/Chicago). Project 1771665; file 9358803. The initial confirmation showed Processing; moderator approval is pending. All 1,013 quotes and existing posting behavior are unchanged.
+
+The initial submission is complete. The instructions below are retained as reference; do not create a duplicate project or upload.
 
 1. Use a pseudonymous CurseForge author account/profile. Public credit in these materials is TQ Maintainers; the service still receives the account information used to sign in. Check the public profile before creating the project.
 2. Create a World of Warcraft Addons project named **Trump Quotes**, subject to name availability. Select Chat & Communication, use the summary/description in listing.md, and upload icon-400.png.
@@ -12,7 +14,10 @@ Status: prepared for upload; not submitted or approved. All 1,013 quotes and exi
 
 The installation ZIP is byte-identical to the existing v0.8.0 release. SHA256SUMS.txt records its checksum and the supporting materials. The artwork is an original AI-generated decorative icon, not a screenshot.
 
-No account, project, upload token, or CurseForge publishing workflow has been created. GitHub remains the current distribution channel, and daily quote collection continues to prepare updates for review only.
+The project was created under the pseudonymous account user_22tysrz4v3nx0uax, with TQ Maintainers credited in the listing. The v0.8.0 file was submitted as Beta for WoW Forever 1.60.1, with manual publication after approval and third-party distribution allowed. No personal profile/repository links were added. No upload token or CurseForge publishing workflow has been created. Daily quote collection continues to prepare updates for review only.
+
+Author portal: https://authors.curseforge.com/#/projects/1771665/files
+Project preview: https://www.curseforge.com/wow/addons/trump-quotes/preview
 
 Official submission guide: https://support.curseforge.com/support/solutions/articles/9000197241-creating-and-submitting-a-project
 Moderation policies: https://support.curseforge.com/support/solutions/articles/9000197279-moderation-policies
