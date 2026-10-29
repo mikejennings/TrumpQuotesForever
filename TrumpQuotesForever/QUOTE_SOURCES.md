@@ -1,10 +1,11 @@
 # Quote sources and context
 
 Checked October 28, 2026. Numbers follow `Quotes.lua`, then `MoreQuotes.lua`,
-then `InsultQuotes.lua`, then `ArchiveQuotes.lua`, counting each string once. This is a curated collection,
+then `InsultQuotes.lua`, then `ArchiveQuotes.lua`, then `DailyQuotes.lua`, counting each string once. This is a curated collection,
 not an exhaustive archive. Entries 121–200 are documented individually in
 [INSULT_SOURCES.md](INSULT_SOURCES.md). Entries 201–1012 are documented in
-[ARCHIVE_SOURCES.md](ARCHIVE_SOURCES.md).
+[ARCHIVE_SOURCES.md](ARCHIVE_SOURCES.md). Later additions are documented in
+[DAILY_SOURCES.md](DAILY_SOURCES.md).
 These are excerpts of documented statements, not invented Trump-style lines.
 Straight apostrophes and quotation marks replace typographic characters;
 punctuation follows the cited transcript or reporting and is normalized where

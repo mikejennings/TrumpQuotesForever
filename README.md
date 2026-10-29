@@ -1,4 +1,4 @@
-# Trump Quotes Forever — 0.7.0
+# Trump Quotes Forever — 0.8.0
 
 Targets **WoW: Forever 1.60.1, Interface 16001**, not Retail or Classic Era.
 No libraries required. 1,012 sourced Trump quotes and nickname fragments, selected randomly without
@@ -61,6 +61,27 @@ Verified locally with Lua 5.1-compatible code and mocked WoW APIs; **not yet tes
 inside Forever**. Check loading, the minimap launcher, Settings → AddOns, the channel picker,
 Apply/Start/Stop, `/tq post`, `/tq prepare`, and zone changes in the client. If the addon is marked out of date, compare
 its interface number with `/dump select(4, GetBuildInfo())`.
+
+## Daily quote updates and review
+
+New quotes are prepared through a daily Codex research automation and proposed
+in a private GitHub draft pull request. The automation depends on the Mac hosting
+Codex being available; it is not a collector running continuously inside WoW or
+on GitHub. It looks back seven days to catch delayed sources and missed runs.
+
+Nothing merges or publishes automatically. Each PR includes source/context notes;
+GitHub Actions validates the proposal and creates an anonymous review ZIP with a
+checksum. There is no CurseForge integration. Open a PR's Actions run to download
+its review artifact. Artifacts are retained for 30 days.
+
+See [the daily research and reviewer guide](TrumpQuotesForever/UPDATE_GUIDE.md) for the source
+policy, limitations, record schema, commands, and human approval steps.
+The JSON ledger is `data/daily_quotes.json`; `DailyQuotes.lua` and the complete
+catalog are generated. [Daily source notes](TrumpQuotesForever/DAILY_SOURCES.md)
+identify newer entries. Historical source files remain separate.
+
+Distributed builds use anonymous credits. Existing private Git history is kept;
+no claim is made that GitHub account ownership or previous shared ZIPs are anonymous.
 
 ## Development
 

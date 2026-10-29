@@ -4,3 +4,7 @@
 # Local ChatGPT project context and synced references.
 /AGENTS.md
 /sources/
+
+/dist/
+__pycache__/
+*.pyc

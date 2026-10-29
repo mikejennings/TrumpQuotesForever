@@ -1,6 +1,6 @@
 local ns = {}
 local function load(name) assert(loadfile("TrumpQuotesForever/" .. name .. ".lua"))("TrumpQuotesForever", ns) end
-load("Quotes"); load("MoreQuotes"); load("InsultQuotes"); load("ArchiveQuotes"); load("Core")
+load("Quotes"); load("MoreQuotes"); load("InsultQuotes"); load("ArchiveQuotes"); load("DailyQuotes"); load("Core")
 local core = ns.Core
 assert(core.Range(1, 2) == 60)
 assert(not core.Range(0, 2))

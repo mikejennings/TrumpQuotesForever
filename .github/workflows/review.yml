@@ -1,0 +1,49 @@
+name: Validate and package review build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# Tests and packaging cannot push, merge, approve, tag, or publish releases.
+permissions:
+  contents: read
+
+concurrency:
+  group: review-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Verify quotes and addon
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Install Lua test runtimes
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y lua5.1 luajit
+      - name: Test quote maintenance
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Validate quote provenance and generated files
+        run: |
+          python3 scripts/quote_tools.py validate
+          python3 scripts/quote_tools.py render --check
+      - name: Test addon behavior
+        run: |
+          lua5.1 tests/test.lua
+          luajit tests/test.lua
+      - name: Build anonymous review ZIP
+        run: python3 scripts/quote_tools.py package --review
+      - name: Retain review ZIP and checksum
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: TrumpQuotesForever-review-${{ github.run_number }}
+          path: dist/*
+          if-no-files-found: error
+          retention-days: 30

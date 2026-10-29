@@ -1,10 +1,10 @@
-# All 1,012 entries — Trump Quotes Forever 0.7.0
+# All 1,012 entries — Trump Quotes Forever 0.8.0
 
-Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and standalone nickname fragments.
+Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
-[Sources for entries 1–120](QUOTE_SOURCES.md) · [Sources for entries 121–200](INSULT_SOURCES.md) · [Sources for entries 201–1012](ARCHIVE_SOURCES.md)
+[Sources 1–120](QUOTE_SOURCES.md) · [Sources 121–200](INSULT_SOURCES.md) · [Sources 201–1012](ARCHIVE_SOURCES.md) · [Daily additions](DAILY_SOURCES.md)
 
-This is a curated collection; the source notes distinguish accusations, jokes, and other rhetoric from established facts.
+Accusations, opinions, jokes, and boasts are attributed remarks, not established facts.
 
 1. The time for empty talk is over.
 2. Now arrives the hour of action.
