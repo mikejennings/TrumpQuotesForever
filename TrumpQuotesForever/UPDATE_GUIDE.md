@@ -13,17 +13,16 @@ recorded source; it does not establish that accusations or claims are true.
 Researchers must check speaker identity and surrounding context. Duplicate,
 source-budget, chat-length, date, and package checks are automated.
 
-Open a draft pull request to review proposed quotes. Its **Validate and package
-review build** Actions run contains a test ZIP and checksum, retained for 30 days.
-Review ZIPs contain `REVIEW_ONLY.txt` and must not be presented as approved releases.
-Human review and merge are required before proposals become part of the main pool.
-Merging does not automatically publish a GitHub Release or upload to CurseForge.
-A scheduled Action prepares an unpublished release draft after at least five days
-since the last published stable release, if approved main content changed and no
-draft is waiting. It includes an install ZIP, checksum and Forever addon-manager
-metadata; a maintainer reviews and publishes it manually. A separate manually
-confirmed release Action also remains available for versions already on main.
-There is no CurseForge integration and no in-game download code.
+Daily account-post additions are automatically accepted after source/schema,
+duplicate, chat-length, date, privacy, Python/Lua/LuaJIT, append-only and exact
+generated-output checks. The PR is an audit trail. Existing quote edits and code
+changes are not automatically accepted. Test ZIPs contain REVIEW_ONLY.txt and are
+retained for 30 days; release ZIPs do not contain that marker.
+
+Changed main content is published approximately every five days. The same tested
+ZIP goes to GitHub and CurseForge, with automatic CurseForge publication after
+moderator approval. Uploads require a configured repository secret; the initial
+CurseForge project remains under review. There is no in-game download code.
 
 `DailyQuotes.lua` and `DAILY_SOURCES.md` contain the newer entries; their editable
 source ledger and maintenance tools live in the development repository. The full

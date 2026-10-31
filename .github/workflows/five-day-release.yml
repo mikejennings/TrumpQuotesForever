@@ -1,4 +1,4 @@
-name: Prepare five-day release draft
+name: Publish five-day releases
 
 on:
   schedule:
@@ -22,6 +22,7 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
+      CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
       GIT_AUTHOR_NAME: TQ Maintainers
       GIT_AUTHOR_EMAIL: tq-maintainers@users.noreply.github.com
       GIT_COMMITTER_NAME: TQ Maintainers
@@ -43,6 +44,13 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y lua5.1 luajit
+      - name: Require CurseForge publication access before creating a release
+        if: steps.plan.outputs.due == 'true'
+        run: |
+          if [ -z "$CF_API_TOKEN" ]; then
+            echo 'Missing CF_API_TOKEN Actions secret. No release will be created until CurseForge upload access is configured.'
+            exit 1
+          fi
       - name: Test and build only approved main content
         if: steps.plan.outputs.due == 'true'
         run: |
@@ -54,7 +62,7 @@ jobs:
           luajit tests/test.lua
           version=$(cat dist/release-version.txt)
           python3 scripts/quote_tools.py release --version "$version"
-      - name: Save versioned source and create an unpublished release draft
+      - name: Save versioned source and publish to CurseForge and GitHub
         if: steps.plan.outputs.due == 'true'
         run: |
           set -euo pipefail
@@ -69,8 +77,7 @@ jobs:
           version = Path('dist/release-version.txt').read_text().strip()
           Path('/tmp/release-notes.md').write_text(f'''WoW Forever {version}; interface 16001.
 
-          UNPUBLISHED DRAFT — inspect changes and assets before choosing Publish release.
-          Contains only content already on main; pending quote PRs are not included.
+          Contains tested content on main, including automatically accepted quote-only additions.
           The source branch contains a version bump and matching generated version labels.
 
           Install TrumpQuotesForever-{version}.zip by extracting its top-level folder into Interface/AddOns.
@@ -78,9 +85,11 @@ jobs:
           Anonymous package checks, Python tests, Lua and LuaJIT tests passed.
           The posting timer starts off. Live-client public-channel delivery remains unverified.
 
-          No automatic publishing, CurseForge upload, or acceptance of pending proposals.
+          The identical ZIP is submitted to CurseForge as a Release with automatic
+          publication after moderator approval. A receipt is attached to this release.
           ''')
           PY
           gh release create "v${version}" dist/release/*.zip dist/release/*.sha256 dist/release/release.json \
             --draft --target "$(git rev-parse HEAD)" \
             --title "Trump Quotes Forever ${version} (WoW Forever)" --notes-file /tmp/release-notes.md
+          python3 scripts/publish_release.py --tag "v${version}"

@@ -1,4 +1,4 @@
-name: Collect daily quote proposals
+name: Collect and accept quote additions
 
 on:
   schedule:
@@ -73,7 +73,7 @@ jobs:
           lua5.1 tests/test.lua
           luajit tests/test.lua
           python3 scripts/quote_tools.py package --review
-      - name: Push proposals and maintain a single draft PR
+      - name: Accept tested quote-only additions
         run: |
           set -euo pipefail
           git add data/daily_quotes.json TrumpQuotesForever/DailyQuotes.lua TrumpQuotesForever/DAILY_SOURCES.md TrumpQuotesForever/QUOTE_CATALOG.md README.md
@@ -84,6 +84,7 @@ jobs:
             echo 'No pending additions; no empty PR.'
             exit 0
           fi
+          python3 scripts/scheduled_updates.py verify-quote-only
           git push origin HEAD:automation/feed-quotes
           python3 - <<'PY'
           import json, subprocess
@@ -94,9 +95,9 @@ jobs:
           lines = ['Daily archive-feed proposals. Exact original-text sentences, not independently authenticated or fact-checked.',
                    'Reposts, quote-posts and generated media text are excluded. This does not search live speech or reporter exchanges.', '',
                    'All Python, Lua and LuaJIT tests and review packaging ran in the collecting Action. The review ZIP is attached to that run.', '',
-                   '- [ ] Check attribution, full context and excerpt selection',
-                   '- [ ] Accept the additions by merging only after review', '',
-                   'No automatic merge, publication, or CurseForge upload.', '']
+                   'Automatic quote-only acceptance is authorized by the maintainer. Existing records and non-quote files cannot change.',
+                   'Source matching does not establish the truth of quoted allegations.', '',
+                   'Releases publish on the separate five-day schedule.', '']
           for r in records:
               lines += [f"- {r['date']}: {r['quote']}", f"  Source: {r['source_url']}", f"  Evidence: {r['evidence_url']}", '']
           Path('/tmp/feed-pr.md').write_text('\n'.join(lines))
@@ -105,9 +106,22 @@ jobs:
           if [ -n "$number" ]; then
             gh pr edit "$number" --body-file /tmp/feed-pr.md
           else
-            gh pr create --draft --base main --head automation/feed-quotes \
+            gh pr create --base main --head automation/feed-quotes \
               --title 'Daily sourced quote proposals' --body-file /tmp/feed-pr.md
           fi
+          number=$(gh pr list --state open --head automation/feed-quotes --json number --jq '.[0].number')
+          if [ "$(gh pr view "$number" --json isDraft --jq .isDraft)" = true ]; then
+            gh pr ready "$number"
+          fi
+          # The tested head and main base must still be current at merge time.
+          expected_base=$(git rev-parse origin/main)
+          actual_base=$(gh api "repos/${GH_REPO}/git/ref/heads/main" --jq .object.sha)
+          if [ "$expected_base" != "$actual_base" ]; then
+            echo 'Main changed during verification; rerun before merging.'
+            exit 1
+          fi
+          gh pr merge "$number" --merge --match-head-commit "$(git rev-parse HEAD)" \
+            --subject 'Accept tested quote-only additions'
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always() && steps.verify.outcome == 'success'
         with:

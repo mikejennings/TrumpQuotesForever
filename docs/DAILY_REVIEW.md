@@ -1,20 +1,16 @@
 # Daily quote review
 
-## Current schedules
+## Current policy
 
-GitHub now runs daily account-post collection and five-day release-draft checks.
-See [SCHEDULED_UPDATES.md](SCHEDULED_UPDATES.md) for source coverage, timing and the
-review/publish procedure. The feed workflow uses `automation/feed-quotes`; it does
-not search live speeches, press exchanges or news. All proposals require review.
-The previous Codex desktop research automation is paused and stays paused. Its
-broader research procedure below remains available for manual runs and any later
-user-authorized resumption, using its separate `automation/daily-quotes` branch.
-
-The review workflow and collector test and package proposals. A scheduled release
-job can create **unpublished drafts** from approved main content after five days;
-it cannot publish them or accept pending PRs. The existing manual release workflow
-can publish on explicit dispatch. No CurseForge upload is automated. The repository
-stays private; distributed artifacts and new git commits use anonymous credits.
+The maintainer now authorizes automatic acceptance of tested quote-only additions
+and five-day publication to GitHub and CurseForge. See SCHEDULED_UPDATES.md for
+implemented scope, guardrails, required upload secret and moderation limitations.
+The RSS bot uses automation/feed-quotes; it does not search speeches or news.
+The desktop research automation is paused. The research procedure below describes
+manual source work and its separate automation/daily-quotes branch; its earlier
+blanket no-publication policy does not govern the newly authorized release jobs.
+Broader/manual research PRs still require deliberate review; only the tested RSS
+quote-addition pipeline is automatically merged. Credits remain anonymous.
 
 ## Daily researcher instructions
 

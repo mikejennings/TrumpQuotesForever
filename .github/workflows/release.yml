@@ -1,7 +1,6 @@
 name: Publish WoW Forever addon
 
-# A reviewed merge never publishes automatically. An explicit manual dispatch
-# on main with confirmation is required for each version.
+# Optional manual release path; the separate five-day workflow is automatic.
 on:
   workflow_dispatch:
     inputs:
@@ -70,7 +69,8 @@ jobs:
 
           Python, Lua and LuaJIT tests, generated-file and anonymous package checks passed.
           Source commit: {os.environ['GITHUB_SHA']}.
-          No CurseForge upload or automatic acceptance of pending quote PRs.
+          The identical ZIP is uploaded to CurseForge for automatic publication
+          after moderator approval. An upload receipt is attached to the release.
           '''
           Path('dist/release/RELEASE_NOTES.md').write_text(text)
           PY
@@ -89,6 +89,9 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
       - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
         with:
           name: verified-release-bundle
@@ -97,10 +100,15 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           RELEASE_VERSION: ${{ inputs.version }}
           SOURCE_SHA: ${{ github.sha }}
         run: |
           set -euo pipefail
+          if [ -z "$CF_API_TOKEN" ]; then
+            echo 'Set the CF_API_TOKEN Actions secret before publication.'
+            exit 1
+          fi
           if gh api "repos/${GH_REPO}/git/ref/tags/v${RELEASE_VERSION}" --silent 2>/dev/null; then
             echo "Tag already exists. Use a new TOC version; existing tags are never reused."
             exit 1
@@ -110,4 +118,5 @@ jobs:
             --target "$SOURCE_SHA" \
             --title "Trump Quotes Forever ${RELEASE_VERSION} (WoW Forever)" \
             --notes-file dist/release/RELEASE_NOTES.md \
-            --latest
+            --draft
+          python3 scripts/publish_release.py --tag "v${RELEASE_VERSION}"

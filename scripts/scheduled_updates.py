@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 import re
 import subprocess
+import tempfile
 from urllib.request import Request, urlopen
 import xml.etree.ElementTree as ET
 
@@ -88,7 +89,7 @@ def candidates(xml, now):
                 'context': 'Automatically extracted contiguous sentence from an archive RSS item marked original by Donald J. Trump. '
                            'Only the original text field was used, not media transcripts, image descriptions or reposts. '
                            'Other sentences are omitted. Archive attribution is not independent authentication or fact checking. '
-                           'A human must check the linked full post and context before merging.',
+                           'Automatic quote-only acceptance was authorized by the maintainer; linked context remains available for correction.',
                 'assessment': 'unverified-claim', 'checked_at': now.isoformat(),
                 'attribution': 'source-matched',
             })
@@ -171,11 +172,45 @@ def plan(root=qt.ROOT):
     return version
 
 
+def check_append_only(base, proposed):
+    if len(proposed) <= len(base) or proposed[:len(base)] != base:
+        raise ValueError('Automatic acceptance permits additions only; existing quotes must stay unchanged')
+
+
+def verify_quote_only(root=qt.ROOT, base='origin/main'):
+    """Reconstruct generated outputs from trusted main, rejecting other edits."""
+    def show(path):
+        return subprocess.check_output(['git', 'show', f'{base}:{path}'], cwd=root)
+    paths = subprocess.check_output(['git', 'diff', '--name-only', base, 'HEAD'], cwd=root, text=True).splitlines()
+    allowed = {qt.LEDGER, *qt.GENERATED}
+    if set(paths) - allowed:
+        raise ValueError('Automatic acceptance is limited to the quote ledger and exact generated outputs')
+    proposed = qt.read_records(root)
+    check_append_only(json.loads(show(qt.LEDGER)), proposed)
+    qt.validate(proposed, root)
+    with tempfile.TemporaryDirectory() as directory:
+        clean = Path(directory)
+        inputs = subprocess.check_output(['git', 'ls-tree', '-r', '--name-only', base, '--',
+                                          'TrumpQuotesForever', 'README.md', qt.LEDGER], cwd=root, text=True)
+        for path in inputs.splitlines():
+            destination = clean / path
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            destination.write_bytes(show(path))
+        (clean / qt.LEDGER).write_text(json.dumps(proposed, ensure_ascii=False, indent=2) + '\n')
+        qt.render(clean)
+        for path in qt.GENERATED:
+            if (clean / path).read_bytes() != (root / path).read_bytes():
+                raise ValueError('Unexpected non-quote content in ' + path)
+    print('PASS: additions only; generated outputs match trusted main')
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['collect', 'plan-release'])
+    parser.add_argument('command', choices=['collect', 'plan-release', 'verify-quote-only'])
     args = parser.parse_args()
     if args.command == 'collect':
         collect()
-    else:
+    elif args.command == 'plan-release':
         plan()
+    else:
+        verify_quote_only()
