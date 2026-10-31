@@ -7,6 +7,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import scheduled_updates as updates
@@ -26,6 +27,22 @@ def feed(text='These imaginary cushions are the most tremendous cushions anywher
 
 
 class ScheduledUpdatesTests(unittest.TestCase):
+    def test_total_source_outage_keeps_ledger_unchanged_and_records_coverage(self):
+        import public_quote_sources
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            for name in ['TrumpQuotesForever','data']:
+                shutil.copytree(updates.qt.ROOT/name,root/name)
+            shutil.copy(updates.qt.ROOT/'README.md',root/'README.md')
+            before=(root/updates.qt.LEDGER).read_bytes()
+            with patch.object(updates,'urlopen',side_effect=ValueError('Unavailable')), \
+                 patch.object(public_quote_sources,'fetch',side_effect=ValueError('Unavailable')), \
+                 patch('builtins.print'):
+                with self.assertRaisesRegex(ValueError,'All sources unavailable'):
+                    updates.collect(root=root,now=NOW)
+            self.assertEqual((root/updates.qt.LEDGER).read_bytes(),before)
+            self.assertTrue((root/'dist/quote-source-coverage.json').exists())
+
     def test_auto_accept_rejects_edits_removals_and_noop(self):
         base = [{'id': 'old', 'quote': 'Original quote'}]
         updates.check_append_only(base, base + [{'id': 'new', 'quote': 'Another quote'}])

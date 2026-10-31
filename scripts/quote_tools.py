@@ -100,7 +100,7 @@ def validate(records, root=ROOT):
             raise ValueError('Invalid source/check dates')
         if checked > dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=5):
             raise ValueError('Verification timestamp is in the future')
-        if record['source_kind'] not in {'account_post', 'speech', 'interview', 'press_exchange'}:
+        if record['source_kind'] not in {'account_post', 'speech', 'interview', 'press_exchange', 'news_report'}:
             raise ValueError('Unsupported source kind')
         if record['attribution'] != 'source-matched':
             raise ValueError('Attribution must be source-matched before proposing an entry')

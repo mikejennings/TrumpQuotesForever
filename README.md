@@ -85,10 +85,12 @@ its interface number with `/dump select(4, GetBuildInfo())`.
 
 ## Daily quote updates and review
 
-GitHub Actions checks original account posts daily and collects short, sourced
-sentences into a private draft pull request. Reposts and generated media text are
-excluded. This does not search live speeches or reporter exchanges; those still
-need separate source review. The older Mac-based checker is currently paused.
+GitHub Actions checks public X/Twitter posts, accessible Guardian and PBS news
+reports, Roll Call speech/interview/press transcripts, and original Truth Social
+posts daily. It extracts attributed text, excludes other speakers, and keeps
+source/context notes. No paid X API is used. Public web views and publisher access
+can be limited; each run reports its actual coverage. This is not a promise of
+capturing every remark or news outlet. The older Mac-based checker remains paused.
 
 Validated quote-only additions merge automatically after Python/Lua/LuaJIT,
 source-budget, duplicate, byte-length, privacy and append-only/generated-output

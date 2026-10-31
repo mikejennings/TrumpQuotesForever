@@ -5,11 +5,11 @@
 The maintainer now authorizes automatic acceptance of tested quote-only additions
 and five-day publication to GitHub and CurseForge. See SCHEDULED_UPDATES.md for
 implemented scope, guardrails, required upload secret and moderation limitations.
-The RSS bot uses automation/feed-quotes; it does not search speeches or news.
+The multi-source bot uses automation/feed-quotes and now checks public X pages, news and speaker-labeled transcripts as described in QUOTE_SOURCE_COVERAGE.md. No paid X API is used.
 The desktop research automation is paused. The research procedure below describes
 manual source work and its separate automation/daily-quotes branch; its earlier
 blanket no-publication policy does not govern the newly authorized release jobs.
-Broader/manual research PRs still require deliberate review; only the tested RSS
+Broader/manual research PRs still require deliberate review; only the tested multi-source
 quote-addition pipeline is automatically merged. Credits remain anonymous.
 
 ## Daily researcher instructions
@@ -96,7 +96,7 @@ quote-addition pipeline is automatically merged. Credits remain anonymous.
 | `date` | Publication/utterance date, `YYYY-MM-DD` |
 | `source_url` | Original public HTTPS source |
 | `evidence_url` | Public page used to verify wording and attribution |
-| `source_kind` | `account_post`, `speech`, `interview`, or `press_exchange` |
+| `source_kind` | `account_post`, `speech`, `interview`, `press_exchange`, or `news_report` |
 | `context` | Relevant surrounding context and verification limitations |
 | `assessment` | `unverified-claim`, `opinion-or-insult`, or `joke-or-boast` |
 | `checked_at` | Actual timezone-aware verification timestamp |

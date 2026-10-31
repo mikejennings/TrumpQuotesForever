@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Collect review-only RSS excerpts and plan five-day draft releases."""
+"""Collect attributed public quotes and plan five-day releases."""
 import argparse
 import datetime as dt
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 import json
+import itertools
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -99,31 +101,78 @@ def candidates(xml, now):
 
 def collect(root=qt.ROOT, xml=None, now=None):
     now = now or dt.datetime.now(dt.timezone.utc)
-    if xml is None:
+    live = xml is None
+    coverage = {}
+    groups = []
+    if live:
         # Fixed public endpoint; feed content cannot redirect the collector to
         # arbitrary source URLs or execute commands. Network errors fail the job.
         start = (now - dt.timedelta(days=7)).date().isoformat()
         request = Request(f'https://www.trumpstruth.org/feed?start_date={start}&limit=500',
                           headers={'User-Agent': 'TrumpQuotesForever review RSS reader'})
-        with urlopen(request, timeout=30) as response:
-            xml = response.read(8_000_001)
-        if len(xml) > 8_000_000:
-            raise ValueError('Feed exceeds size limit')
-    records = qt.read_records(root)
-    added = []
-    for record in candidates(xml, now):
         try:
-            qt.validate(records + [record], root)
+            with urlopen(request, timeout=30) as response:
+                xml = response.read(8_000_001)
+            if len(xml) > 8_000_000:
+                raise ValueError('Feed exceeds size limit')
+            truth = candidates(xml, now)
+            groups.append(truth)
+            coverage['truth_archive'] = {'status':'checked','attributed_candidates':len(truth)}
+        except Exception as error:
+            coverage['truth_archive'] = {'status':'unavailable','reason':type(error).__name__}
+        import public_quote_sources
+        known = set()
+        for record in qt.read_records(root):
+            known.update({record['source_url'].rstrip('/'), record['evidence_url'].rstrip('/')})
+        for name in ('QUOTE_SOURCES.md','INSULT_SOURCES.md','ARCHIVE_SOURCES.md'):
+            for url in re.findall(r'https://[^\s)>`]+', (root / 'TrumpQuotesForever' / name).read_text()):
+                known.add(url.split('#')[0].rstrip('/'))
+        extra, source_coverage = public_quote_sources.collect(now, known)
+        groups = extra + groups  # Round-robin across sources; Truth cannot fill every slot.
+        coverage.update(source_coverage)
+        directory = root / 'dist'
+        directory.mkdir(exist_ok=True)
+        (directory / 'quote-source-coverage.json').write_text(json.dumps(coverage,indent=2) + '\n')
+        for name, result in coverage.items():
+            print(f"Coverage {name}: {json.dumps(result)}")
+            if result['status'] == 'unavailable' or result.get('failures') or result.get('article_failures') or result.get('truncated'):
+                print(f'::warning::Incomplete source coverage: {name}; see quote-source-coverage.json')
+        if os.environ.get('GITHUB_STEP_SUMMARY'):
+            with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as summary:
+                summary.write('## Quote-source coverage\n\n```json\n' + json.dumps(coverage,indent=2) + '\n```\n')
+        if not any(result['status']=='checked' for result in coverage.values()):
+            raise ValueError('All sources unavailable; no successful check is claimed')
+    else:
+        groups = [candidates(xml, now)]
+    records = qt.read_records(root)
+    qt.validate(records,root)
+    existing = [qt.canonical(q) for q in qt.base_quotes(root)] + [qt.canonical(r['quote']) for r in records]
+    identities = {r['id'] for r in records}
+    used = {qt.source_key(r[key]) for r in records for key in ('source_url','evidence_url')}
+    added = []
+    pool = [entry for batch in itertools.zip_longest(*groups) for entry in batch if entry]
+    for record in pool:
+        try:
+            key=qt.canonical(record['quote'])
+            sources={qt.source_key(record[name]) for name in ('source_url','evidence_url')}
+            if (record['id'] in identities or sources & used or any(key==old or
+                    qt.difflib.SequenceMatcher(None,key,old).ratio()>.92 for old in existing)):
+                continue
+            qt.validate([record],root)
         except ValueError:
             continue  # Existing sources, duplicates, or unsafe/oversized text.
         records.append(record)
         added.append(record)
+        existing.append(key)
+        identities.add(record['id'])
+        used.update(sources)
         if len(added) >= 10:
             break
     if added:
+        qt.validate(records,root)
         (root / qt.LEDGER).write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\n')
         qt.render(root)
-    print(f'RSS check: {len(added)} new review proposals; no merge or publication')
+    print(f'Source check: {len(added)} new quote additions; collector itself does not merge or publish')
     return added
 
 

@@ -8,14 +8,13 @@ quote acceptance. The repository remains private and credits stay TQ Maintainers
 ## Daily collection and acceptance
 
 `Collect and accept quote additions` runs daily at 14:23 UTC (9:23 AM Chicago in
-daylight time, 8:23 AM in standard time). It reads up to 500 archive RSS items from
-the previous seven days and selects at most ten new original-post sentences per
-run. Reposts, quote-posts, removed entries, other authors, links, quoted material,
-generated media text, unfinished/oversized sentences, endorsements and duplicates
-are skipped. Keyword selection is approximate. Archive attribution is not
-independent authentication or fact checking; entries remain unverified claims.
-This covers account text, not live speeches, reporter exchanges or general news.
-The broader desktop research automation remains paused.
+daylight time, 8:23 AM in standard time). It collects attributed quotes from public X web pages, Guardian/PBS news,
+Roll Call speeches, interviews and press gaggles, plus the Truth archive. See
+QUOTE_SOURCE_COVERAGE.md for exact sources, limits and matching rules. No paid X
+API is used. At most ten new excerpts are accepted per run, with one excerpt per
+source/evidence page. Coverage failures and readable-source counts are recorded
+in the run summary and quote-source-coverage.json. Source matching does not prove
+an allegation true; the broader desktop research automation remains paused.
 
 The bot uses one PR on `automation/feed-quotes` as an audit trail. Before merging,
 it validates provenance/schema, duplicates, source budget, dates and chat length;

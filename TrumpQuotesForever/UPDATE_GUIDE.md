@@ -1,11 +1,11 @@
 # Quote updates
 
-This addon loads its quote pool from shipped files. A daily GitHub Action checks
-original account-post text through an archive RSS feed and proposes short excerpts
-in a draft PR. Reposts, quote-posts and generated media text are skipped. It needs
-neither a paid API key nor a running Mac. Live speeches and reporter exchanges
-still need separate source review; coverage is not exhaustive. The older desktop
-research automation is currently paused.
+This addon loads its quote pool from shipped files. The daily GitHub Action
+collects attributed text from public X/Twitter web pages, accessible news articles,
+speech/interview/press transcripts and original Truth Social posts. It requires
+no paid X API or running Mac. Other speakers, reposts and ambiguous attributions
+are excluded. Public pages can be limited or unavailable; coverage is reported
+and is not exhaustive. The older desktop research automation remains paused.
 
 Each proposal records the original source, attribution evidence, date, and
 context. Source matching means the excerpt appears as Trump's words in the

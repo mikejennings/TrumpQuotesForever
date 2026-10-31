@@ -57,7 +57,7 @@ jobs:
           else
             git checkout -b automation/feed-quotes
           fi
-      - name: Collect original post sentences for human review
+      - name: Collect attributed news, transcript and social quotes
         run: python3 scripts/scheduled_updates.py collect
       - name: Install test runtimes
         run: |
@@ -92,8 +92,9 @@ jobs:
           old = json.loads(subprocess.check_output(['git', 'show', 'origin/main:data/daily_quotes.json']))
           old_ids = {r['id'] for r in old}
           records = [r for r in json.loads(Path('data/daily_quotes.json').read_text()) if r['id'] not in old_ids]
-          lines = ['Daily archive-feed proposals. Exact original-text sentences, not independently authenticated or fact-checked.',
-                   'Reposts, quote-posts and generated media text are excluded. This does not search live speech or reporter exchanges.', '',
+          lines = ['Daily attributed quote additions from accessible news, speaker-labeled transcripts and original social posts.',
+                   'Source matching is not independent authentication or fact checking. Reposts, ambiguous speakers and generated media text are excluded.',
+                   'The collecting run includes a coverage report for public X web scraping, news, transcripts and the Truth archive. No paid X API is used.', '',
                    'All Python, Lua and LuaJIT tests and review packaging ran in the collecting Action. The review ZIP is attached to that run.', '',
                    'Automatic quote-only acceptance is authorized by the maintainer. Existing records and non-quote files cannot change.',
                    'Source matching does not establish the truth of quoted allegations.', '',
@@ -123,9 +124,18 @@ jobs:
           gh pr merge "$number" --merge --match-head-commit "$(git rev-parse HEAD)" \
             --subject 'Accept tested quote-only additions'
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: quote-source-coverage-${{ github.run_number }}
+          path: dist/quote-source-coverage.json
+          if-no-files-found: ignore
+          retention-days: 30
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always() && steps.verify.outcome == 'success'
         with:
           name: daily-quote-review-${{ github.run_number }}
-          path: dist/*review.zip*
+          path: |
+            dist/*review.zip*
+            dist/quote-source-coverage.json
           if-no-files-found: error
           retention-days: 30
