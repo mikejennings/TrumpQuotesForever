@@ -135,3 +135,23 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: press_exchange; assessment: unverified-claim; checked: 2026-10-31T02:51:47.362720+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1026. 2026-10-25 — public-116d861d860f3d266e27
+
+> That's why I'm campaigning like crazy.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-larry-kudlow-fox-news-sunday-morning-futures-october-25-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-larry-kudlow-fox-news-sunday-morning-futures-october-25-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-10-31T18:38:27.668313+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1027. 2026-10-25 — public-46830f98b6156be60630
+
+> It's so stupid.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-port-huron-michigan-october-25-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-port-huron-michigan-october-25-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-10-31T18:38:27.668313+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.

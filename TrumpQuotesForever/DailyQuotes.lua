@@ -29,6 +29,10 @@ local additions = {
     "We had a tremendous day in Texas.",
     -- 1025: public-3ad9265a8a2107f02e5d; 2026-10-27
     "And the crowds, I hear, are tremendous.",
+    -- 1026: public-116d861d860f3d266e27; 2026-10-25
+    "That's why I'm campaigning like crazy.",
+    -- 1027: public-46830f98b6156be60630; 2026-10-25
+    "It's so stupid.",
 }
 
 for _, quote in ipairs(additions) do

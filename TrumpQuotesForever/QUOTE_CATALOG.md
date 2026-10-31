@@ -1,4 +1,4 @@
-# All 1,025 entries — Trump Quotes Forever 0.8.0
+# All 1,027 entries — Trump Quotes Forever 0.8.0
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
@@ -1031,3 +1031,5 @@ Accusations, opinions, jokes, and boasts are attributed remarks, not established
 1023. And then you have ranked-choice voting, which is crooked as can be.
 1024. We had a tremendous day in Texas.
 1025. And the crowds, I hear, are tremendous.
+1026. That's why I'm campaigning like crazy.
+1027. It's so stupid.
