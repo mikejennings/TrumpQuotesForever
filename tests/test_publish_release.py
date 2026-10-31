@@ -84,13 +84,15 @@ class PublicationTests(unittest.TestCase):
             shutil.copytree(publisher.qt.ROOT / 'data', root / 'data')
             shutil.copy(publisher.qt.ROOT / 'README.md', root / 'README.md')
             publisher.qt.render(root)
-            archive = publisher.qt.release_bundle('0.8.0', root)
-            publisher.validate_archive(archive, '0.8.0', 16001)
+            toc = (root / 'TrumpQuotesForever/TrumpQuotesForever.toc').read_text()
+            version = publisher.re.search(r'^## Version: (.+)$', toc, publisher.re.M)[1]
+            archive = publisher.qt.release_bundle(version, root)
+            publisher.validate_archive(archive, version, 16001)
             with self.assertRaises(ValueError):
-                publisher.validate_archive(archive, '0.8.1', 16001)
+                publisher.validate_archive(archive, '9999.0.0', 16001)
             review = publisher.qt.package(root, review=True)
             with self.assertRaises(ValueError):
-                publisher.validate_archive(review, '0.8.0', 16001)
+                publisher.validate_archive(review, version, 16001)
 
 
 if __name__ == '__main__':
