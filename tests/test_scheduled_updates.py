@@ -3,6 +3,7 @@ from email.utils import format_datetime
 from html import escape
 from pathlib import Path
 import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -25,6 +26,31 @@ def feed(text='These imaginary cushions are the most tremendous cushions anywher
 
 
 class ScheduledUpdatesTests(unittest.TestCase):
+    def test_auto_accept_rejects_edits_removals_and_noop(self):
+        base = [{'id': 'old', 'quote': 'Original quote'}]
+        updates.check_append_only(base, base + [{'id': 'new', 'quote': 'Another quote'}])
+        for proposed in [[], base, [{'id': 'old', 'quote': 'Edited quote'}, {'id': 'new'}]]:
+            with self.assertRaisesRegex(ValueError, 'additions only'):
+                updates.check_append_only(base, proposed)
+
+    def test_auto_accept_rejects_unrelated_generated_file_changes(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory) / 'repo'
+            subprocess.run(['git', 'clone', '--quiet', '--no-hardlinks', str(updates.qt.ROOT), str(root)], check=True)
+            subprocess.run(['git', 'config', 'user.name', 'TQ Maintainers'], cwd=root, check=True)
+            subprocess.run(['git', 'config', 'user.email', 'tq-maintainers@users.noreply.github.com'], cwd=root, check=True)
+            base = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=root, text=True).strip()
+            updates.collect(root, feed(), NOW)
+            subprocess.run(['git', 'add', '.'], cwd=root, check=True)
+            subprocess.run(['git', 'commit', '--quiet', '-m', 'Synthetic fixture'], cwd=root, check=True)
+            updates.verify_quote_only(root, base)
+            with (root / 'README.md').open('a') as file:
+                file.write('\nUnrelated injected instructions.\n')
+            subprocess.run(['git', 'add', 'README.md'], cwd=root, check=True)
+            subprocess.run(['git', 'commit', '--quiet', '-m', 'Synthetic unwanted edit'], cwd=root, check=True)
+            with self.assertRaisesRegex(ValueError, 'Unexpected non-quote content'):
+                updates.verify_quote_only(root, base)
+
     def test_exact_sentence_and_archive_attribution(self):
         quote = 'These tremendous cushions are lovely!'
         result = updates.candidates(feed(quote + ' A routine second sentence.'), NOW)

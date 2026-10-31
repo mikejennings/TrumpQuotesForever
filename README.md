@@ -4,7 +4,7 @@ Targets **WoW: Forever 1.60.1, Interface 16001**, not Retail or Classic Era.
 No libraries required. 1,015 sourced Trump quotes and nickname fragments, selected randomly without
 immediate repeats. The optional timer waits a random 10–20 minutes between attempts.
 
-## GitHub download and manual releases
+## Downloads and releases
 
 The **Publish WoW Forever addon** Action creates a GitHub Release containing an
 install-ready `TrumpQuotesForever-VERSION.zip`, its SHA-256 checksum, and
@@ -21,7 +21,9 @@ Run workflow**, choose **main**, enter the TOC version, and explicitly confirm
 publication. Tests and package checks run before a separate publishing job gets
 write permission. Existing release assets are not overwritten. Other branches,
 ordinary pushes, daily research, and PR merges do not trigger publication.
-There is no CurseForge integration.
+The five-day workflow publishes automatically and the manual Action remains an
+optional override. Both submit the same ZIP to CurseForge once CF_API_TOKEN is
+configured; CurseForge visibility still depends on moderator approval.
 
 ## Install
 
@@ -88,12 +90,17 @@ sentences into a private draft pull request. Reposts and generated media text ar
 excluded. This does not search live speeches or reporter exchanges; those still
 need separate source review. The older Mac-based checker is currently paused.
 
-Nothing merges or publishes automatically. Each proposal includes source/context
-notes and a tested anonymous review ZIP with a checksum, retained for 30 days.
-A second Action checks daily and prepares an unpublished release draft after at
-least five days since the last published stable release, only when approved main
-content changed and no draft is already waiting. Review and publish that draft
-manually. No paid API key, running Mac, or CurseForge publishing is required.
+Validated quote-only additions merge automatically after Python/Lua/LuaJIT,
+source-budget, duplicate, byte-length, privacy and append-only/generated-output
+checks. Existing quote edits, code changes and unrelated files are excluded.
+The collector keeps a PR audit trail and a test ZIP with checksum for 30 days.
+
+A separate Action publishes changed main content approximately every five days,
+using a versioned install ZIP, checksum and Forever metadata. It uploads the same
+ZIP to CurseForge as a Release configured to go live after moderator approval,
+then publishes GitHub after upload acceptance. GitHub needs a CF_API_TOKEN Actions
+secret from the pseudonymous CurseForge author; no paid AI key or running Mac is
+required. The initial CurseForge project is still under moderator review.
 
 See [the daily research and reviewer guide](TrumpQuotesForever/UPDATE_GUIDE.md) for the source
 policy, limitations, record schema, commands, and human approval steps.
