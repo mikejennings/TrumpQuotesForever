@@ -1,0 +1,115 @@
+name: Collect daily quote proposals
+
+on:
+  schedule:
+    - cron: '23 14 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-feed-quotes
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      GIT_AUTHOR_NAME: TQ Maintainers
+      GIT_AUTHOR_EMAIL: tq-maintainers@users.noreply.github.com
+      GIT_COMMITTER_NAME: TQ Maintainers
+      GIT_COMMITTER_EMAIL: tq-maintainers@users.noreply.github.com
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+      - name: Preserve pending proposals and reviewer edits
+        run: |
+          set -euo pipefail
+          gh pr list --state all --head automation/feed-quotes --json state,mergedAt --limit 100 > /tmp/feed-prs.json
+          python3 - <<'PY'
+          import json
+          prs = json.load(open('/tmp/feed-prs.json'))
+          if any(p['state'] == 'CLOSED' and p['mergedAt'] is None for p in prs):
+              raise SystemExit('A feed proposal was rejected. Maintainer intervention is required; rejected sources will not be silently re-proposed.')
+          PY
+          if git ls-remote --exit-code --heads origin automation/feed-quotes > /dev/null; then
+            git fetch origin automation/feed-quotes
+            # The bot branch may contain only quote data and generated files.
+            git diff --name-only origin/main...FETCH_HEAD > /tmp/feed-paths.txt
+            python3 - <<'PY'
+          from pathlib import Path
+          allowed = {'data/daily_quotes.json', 'TrumpQuotesForever/DailyQuotes.lua',
+                     'TrumpQuotesForever/DAILY_SOURCES.md', 'TrumpQuotesForever/QUOTE_CATALOG.md', 'README.md'}
+          if set(Path('/tmp/feed-paths.txt').read_text().splitlines()) - allowed:
+              raise SystemExit('Unexpected code changes on the proposal branch; review manually.')
+          PY
+            git checkout -b automation/feed-quotes FETCH_HEAD
+            git merge origin/main --no-edit
+          else
+            git checkout -b automation/feed-quotes
+          fi
+      - name: Collect original post sentences for human review
+        run: python3 scripts/scheduled_updates.py collect
+      - name: Install test runtimes
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y lua5.1 luajit
+      - name: Test and package proposals in this run
+        run: |
+          set -euo pipefail
+          python3 -m unittest discover -s tests -p 'test_*.py' -v
+          python3 scripts/quote_tools.py validate
+          python3 scripts/quote_tools.py render --check
+          lua5.1 tests/test.lua
+          luajit tests/test.lua
+          python3 scripts/quote_tools.py package --review
+      - name: Push proposals and maintain a single draft PR
+        run: |
+          set -euo pipefail
+          git add data/daily_quotes.json TrumpQuotesForever/DailyQuotes.lua TrumpQuotesForever/DAILY_SOURCES.md TrumpQuotesForever/QUOTE_CATALOG.md README.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Propose sourced original-post excerpts for review'
+          fi
+          if git diff --quiet origin/main HEAD -- data/daily_quotes.json; then
+            echo 'No pending additions; no empty PR.'
+            exit 0
+          fi
+          git push origin HEAD:automation/feed-quotes
+          python3 - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          old = json.loads(subprocess.check_output(['git', 'show', 'origin/main:data/daily_quotes.json']))
+          old_ids = {r['id'] for r in old}
+          records = [r for r in json.loads(Path('data/daily_quotes.json').read_text()) if r['id'] not in old_ids]
+          lines = ['Daily archive-feed proposals. Exact original-text sentences, not independently authenticated or fact-checked.',
+                   'Reposts, quote-posts and generated media text are excluded. This does not search live speech or reporter exchanges.', '',
+                   'All Python, Lua and LuaJIT tests and review packaging ran in the collecting Action. The review ZIP is attached to that run.', '',
+                   '- [ ] Check attribution, full context and excerpt selection',
+                   '- [ ] Accept the additions by merging only after review', '',
+                   'No automatic merge, publication, or CurseForge upload.', '']
+          for r in records:
+              lines += [f"- {r['date']}: {r['quote']}", f"  Source: {r['source_url']}", f"  Evidence: {r['evidence_url']}", '']
+          Path('/tmp/feed-pr.md').write_text('\n'.join(lines))
+          PY
+          number=$(gh pr list --state open --head automation/feed-quotes --json number --jq '.[0].number // empty')
+          if [ -n "$number" ]; then
+            gh pr edit "$number" --body-file /tmp/feed-pr.md
+          else
+            gh pr create --draft --base main --head automation/feed-quotes \
+              --title 'Daily sourced quote proposals' --body-file /tmp/feed-pr.md
+          fi
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: daily-quote-review-${{ github.run_number }}
+          path: dist/*review.zip*
+          if-no-files-found: error
+          retention-days: 30

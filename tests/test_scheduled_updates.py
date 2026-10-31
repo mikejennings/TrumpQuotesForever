@@ -1,0 +1,86 @@
+import datetime as dt
+from email.utils import format_datetime
+from html import escape
+from pathlib import Path
+import shutil
+import sys
+import tempfile
+import unittest
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
+import scheduled_updates as updates
+
+NOW = dt.datetime.now(dt.timezone.utc).replace(microsecond=0)
+
+
+def feed(text='These imaginary cushions are the most tremendous cushions anywhere.',
+         kind='original', creator='Donald J. Trump', removed='false', when=None):
+    return f'''<rss xmlns:archive="{updates.ARCHIVE}" xmlns:truth="{updates.TRUTH}" xmlns:dc="{updates.DC}">
+      <channel><item><link>https://www.trumpstruth.org/statuses/999999</link>
+      <description>{escape('<p>' + text + '</p>')}</description>
+      <archive:postType>{kind}</archive:postType><archive:removed>{removed}</archive:removed>
+      <dc:creator>{creator}</dc:creator><truth:originalUrl>https://truthsocial.com/@realDonaldTrump/999999</truth:originalUrl>
+      <pubDate>{format_datetime(when or NOW - dt.timedelta(hours=1))}</pubDate>
+      </item></channel></rss>'''
+
+
+class ScheduledUpdatesTests(unittest.TestCase):
+    def test_exact_sentence_and_archive_attribution(self):
+        quote = 'These tremendous cushions are lovely!'
+        result = updates.candidates(feed(quote + ' A routine second sentence.'), NOW)
+        self.assertEqual([r['quote'] for r in result], [quote])
+        self.assertIn('not independent authentication', result[0]['context'])
+
+    def test_reposts_quoted_material_wrong_creator_removed(self):
+        for kwargs in [{'kind': 'repost'}, {'kind': 'quote'}, {'creator': 'Other Person'},
+                       {'removed': 'true'}, {'text': '"These tremendous cushions are lovely!"'},
+                       {'text': '<blockquote>These tremendous cushions are lovely!</blockquote>'}]:
+            with self.subTest(kwargs=kwargs):
+                self.assertEqual(updates.candidates(feed(**kwargs), NOW), [])
+
+    def test_no_media_link_fragments_or_unfinished_sentences(self):
+        for text in ['View tremendous video https://example.test/video.',
+                     'An unfinished tremendous sentence',
+                     'Tremendous!', 'Tremendous ' + 'cushions ' * 27 + '.',
+                     'These ordinary cushions are rather nice.',
+                     'These tremendous people have my endorsement!',
+                     'These tremendous cushions are lovely! Please donate today.']:
+            with self.subTest(text=text):
+                self.assertEqual(updates.candidates(feed(text=text), NOW), [])
+
+    def test_time_window_excludes_future_and_old(self):
+        for when in [NOW + dt.timedelta(hours=1), NOW - dt.timedelta(days=8)]:
+            self.assertEqual(updates.candidates(feed(when=when), NOW), [])
+
+    def test_broken_or_empty_feed_is_a_failure(self):
+        for xml in ['<html/>', '<rss><channel/></rss>', '<broken>']:
+            with self.assertRaises(ValueError if xml != '<broken>' else updates.ET.ParseError):
+                updates.candidates(xml, NOW)
+
+    def test_collection_is_idempotent_and_source_budget_preserved(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            shutil.copytree(updates.qt.ROOT / 'TrumpQuotesForever', root / 'TrumpQuotesForever')
+            shutil.copytree(updates.qt.ROOT / 'data', root / 'data')
+            shutil.copy(updates.qt.ROOT / 'README.md', root / 'README.md')
+            first = updates.collect(root, feed(), NOW)
+            self.assertEqual(len(first), 1)
+            original = (root / updates.qt.LEDGER).read_bytes()
+            self.assertEqual(updates.collect(root, feed(), NOW), [])
+            self.assertEqual(updates.collect(root, feed(text='These tremendous cushions are very different today!'), NOW), [])
+            self.assertEqual((root / updates.qt.LEDGER).read_bytes(), original)
+            updates.qt.render(root, check=True)
+
+    def test_five_days_is_elapsed_time_not_day_of_month(self):
+        release = {'draft': False, 'prerelease': False, 'tag_name': 'v0.8.0',
+                   'published_at': '2026-10-29T02:24:42Z'}
+        published = dt.datetime(2026, 10, 29, 2, 24, 42, tzinfo=dt.timezone.utc)
+        self.assertIsNone(updates.release_plan([release], published + dt.timedelta(days=5, seconds=-1), True))
+        self.assertEqual(updates.release_plan([release], published + dt.timedelta(days=5), True), '0.8.1')
+        self.assertIsNone(updates.release_plan([release], published + dt.timedelta(days=8), False))
+        self.assertIsNone(updates.release_plan([release, {'draft': True}], published + dt.timedelta(days=8), True))
+        self.assertIsNone(updates.release_plan([], published, True))
+
+
+if __name__ == '__main__':
+    unittest.main()

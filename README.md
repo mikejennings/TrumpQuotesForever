@@ -83,15 +83,17 @@ its interface number with `/dump select(4, GetBuildInfo())`.
 
 ## Daily quote updates and review
 
-New quotes are prepared through a daily Codex research automation and proposed
-in a private GitHub draft pull request. The automation depends on the Mac hosting
-Codex being available; it is not a collector running continuously inside WoW or
-on GitHub. It looks back seven days to catch delayed sources and missed runs.
+GitHub Actions checks original account posts daily and collects short, sourced
+sentences into a private draft pull request. Reposts and generated media text are
+excluded. This does not search live speeches or reporter exchanges; those still
+need separate source review. The older Mac-based checker is currently paused.
 
-Nothing merges or publishes automatically. Each PR includes source/context notes;
-GitHub Actions validates the proposal and creates an anonymous review ZIP with a
-checksum. There is no CurseForge integration. Open a PR's Actions run to download
-its review artifact. Artifacts are retained for 30 days.
+Nothing merges or publishes automatically. Each proposal includes source/context
+notes and a tested anonymous review ZIP with a checksum, retained for 30 days.
+A second Action checks daily and prepares an unpublished release draft after at
+least five days since the last published stable release, only when approved main
+content changed and no draft is already waiting. Review and publish that draft
+manually. No paid API key, running Mac, or CurseForge publishing is required.
 
 See [the daily research and reviewer guide](TrumpQuotesForever/UPDATE_GUIDE.md) for the source
 policy, limitations, record schema, commands, and human approval steps.

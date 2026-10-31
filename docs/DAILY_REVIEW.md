@@ -1,21 +1,20 @@
 # Daily quote review
 
-The daily research run is a **Codex thread automation**, scheduled for 9:15 AM
-America/Chicago. It uses browsing tools and existing GitHub authentication to
-check new account posts and speech/interview/press transcripts. No scraper,
-external AI service, or API key is bundled with the addon. The Mac hosting the
-Codex automation must be available; this is not a GitHub-hosted daily collector.
-If the machine misses a run, the next run looks back seven days. Sources can
-be incomplete or delayed; this does not promise every remark or instant updates.
+## Current schedules
 
-GitHub Actions runs validation, tests, and ZIP packaging on pull requests and
-changes to main. The workflow has read-only repository access. The review workflow contains no
-publish, release, merge, push, or CurseForge step. A separate manual release
-workflow can publish approved main content only after an explicit per-version
-dispatch with confirmation; the daily researcher must never invoke it. Artifacts are unapproved review
-builds, retained for 30 days. The private repository stays private. Existing
-historical commits are not rewritten; access to the account/repository still
-identifies its owner to GitHub and authorized collaborators.
+GitHub now runs daily account-post collection and five-day release-draft checks.
+See [SCHEDULED_UPDATES.md](SCHEDULED_UPDATES.md) for source coverage, timing and the
+review/publish procedure. The feed workflow uses `automation/feed-quotes`; it does
+not search live speeches, press exchanges or news. All proposals require review.
+The previous Codex desktop research automation is paused and stays paused. Its
+broader research procedure below remains available for manual runs and any later
+user-authorized resumption, using its separate `automation/daily-quotes` branch.
+
+The review workflow and collector test and package proposals. A scheduled release
+job can create **unpublished drafts** from approved main content after five days;
+it cannot publish them or accept pending PRs. The existing manual release workflow
+can publish on explicit dispatch. No CurseForge upload is automated. The repository
+stays private; distributed artifacts and new git commits use anonymous credits.
 
 ## Daily researcher instructions
 
