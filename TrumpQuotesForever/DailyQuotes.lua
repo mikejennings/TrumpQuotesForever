@@ -9,6 +9,26 @@ local additions = {
     "I NEVER even thought to do such a stupid thing!",
     -- 1015: truth-117513970306136414; 2026-10-27
     "Ken Paxton is the Greatest Attorney General in Texas History.",
+    -- 1016: public-e3b0decc5b0bfaf77921; 2026-10-26
+    "It's -- how crazy, how crazy is the world.",
+    -- 1017: public-a203ce215dfd84c29aef; 2026-10-29
+    "You've been following me for two weeks. I feel perfect. You are disgusting. Put yourself in shape. You look like hell,",
+    -- 1018: public-4164f62044a72bb34a36; 2026-10-29
+    "New York needs to defeat this radical left loser and elect Anthony Constantino, a phenomenal person, to the House of Representatives.",
+    -- 1019: public-0bc6c2bd1c5bef814c35; 2026-10-28
+    "It's a crazy thing.",
+    -- 1020: public-7e90281ec6b4182e0a82; 2026-10-27
+    "It's very close, and they can turn things -- now, I'll be vetoing like crazy, OK?",
+    -- 1021: public-ca8db7f3a0efe724fa07; 2026-10-27
+    "If some idiot comes in and terminates them, he will stop construction immediately and so will everybody else.",
+    -- 1022: public-bb3bd4be98817c2bb890; 2026-10-26
+    "Because the way he ran the country, only a stupid person would run the country like that.",
+    -- 1023: public-8a2d8fcd2091182b7e81; 2026-10-25
+    "And then you have ranked-choice voting, which is crooked as can be.",
+    -- 1024: public-67911807c03d1404d004; 2026-10-28
+    "We had a tremendous day in Texas.",
+    -- 1025: public-3ad9265a8a2107f02e5d; 2026-10-27
+    "And the crowds, I hear, are tremendous.",
 }
 
 for _, quote in ipairs(additions) do
