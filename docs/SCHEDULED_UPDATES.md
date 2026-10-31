@@ -34,6 +34,9 @@ GitHub must allow Actions to create pull requests. The workflows request only th
 repository-scoped permissions they need; no personal access token or paid API key
 is needed. They contain no approval or merge operation. A bot-created PR may still
 need a maintainer to approve separate PR-triggered workflows in GitHub's UI.
+The repository's create/approve-PR toggle was enabled during setup because GitHub
+uses that single toggle for creation too; default token permissions remain read-only.
+The review ZIP is retained even if a later PR-creation step fails.
 
 ## Five-day release preparation
 
