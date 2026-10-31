@@ -154,5 +154,29 @@
     "assessment": "unverified-claim",
     "checked_at": "2026-10-31T02:51:47.362720+00:00",
     "attribution": "source-matched"
+  },
+  {
+    "id": "public-116d861d860f3d266e27",
+    "quote": "That's why I'm campaigning like crazy.",
+    "date": "2026-10-25",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-larry-kudlow-fox-news-sunday-morning-futures-october-25-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-larry-kudlow-fox-news-sunday-morning-futures-october-25-2026/",
+    "source_kind": "interview",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-10-31T18:38:27.668313+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "public-46830f98b6156be60630",
+    "quote": "It's so stupid.",
+    "date": "2026-10-25",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-port-huron-michigan-october-25-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-port-huron-michigan-october-25-2026/",
+    "source_kind": "speech",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-10-31T18:38:27.668313+00:00",
+    "attribution": "source-matched"
   }
 ]
