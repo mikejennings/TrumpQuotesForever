@@ -1,4 +1,4 @@
-# All 1,015 entries — Trump Quotes Forever 0.8.0
+# All 1,025 entries — Trump Quotes Forever 0.8.0
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
@@ -1021,3 +1021,13 @@ Accusations, opinions, jokes, and boasts are attributed remarks, not established
 1013. Can you imagine if a Republican stole money like Governor Tim Walz stole from Minnesota? They’d give you the electric chair!
 1014. I NEVER even thought to do such a stupid thing!
 1015. Ken Paxton is the Greatest Attorney General in Texas History.
+1016. It's -- how crazy, how crazy is the world.
+1017. You've been following me for two weeks. I feel perfect. You are disgusting. Put yourself in shape. You look like hell,
+1018. New York needs to defeat this radical left loser and elect Anthony Constantino, a phenomenal person, to the House of Representatives.
+1019. It's a crazy thing.
+1020. It's very close, and they can turn things -- now, I'll be vetoing like crazy, OK?
+1021. If some idiot comes in and terminates them, he will stop construction immediately and so will everybody else.
+1022. Because the way he ran the country, only a stupid person would run the country like that.
+1023. And then you have ranked-choice voting, which is crooked as can be.
+1024. We had a tremendous day in Texas.
+1025. And the crowds, I hear, are tremendous.
