@@ -33,6 +33,20 @@ local additions = {
     "That's why I'm campaigning like crazy.",
     -- 1027: public-46830f98b6156be60630; 2026-10-25
     "It's so stupid.",
+    -- 1028: public-153716b73aed7c8840aa; 2026-10-29
+    "Crazy Bernie -- remember, I used to call him Crazy Bernie.",
+    -- 1029: public-8b1597affabee1f1646f; 2026-10-30
+    "He signed a lot of dumb deals, but this was a deal, the JCPOA, it was the Iran nuclear deal.",
+    -- 1030: public-f42cbd5636adc7051c83; 2026-10-30
+    "I said are you stupid?",
+    -- 1031: public-006d2852676c9b0e6336; 2026-10-30
+    "People, stupid people wanted me to put sanctions on Russia.",
+    -- 1032: public-5afc5a572cf0b715e195; 2026-10-29
+    "He's way out of shape.",
+    -- 1033: public-28a39cbcbf1cfffb6f3a; 2026-10-29
+    "Their policies are so dumb.",
+    -- 1034: public-154b4a07b6802e7e4ed8; 2026-10-29
+    "And that's what has made it probably the greatest economy in history.",
 }
 
 for _, quote in ipairs(additions) do
