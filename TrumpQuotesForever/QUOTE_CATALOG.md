@@ -1,4 +1,4 @@
-# All 1,027 entries — Trump Quotes Forever 0.8.0
+# All 1,034 entries — Trump Quotes Forever 0.8.0
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
@@ -1033,3 +1033,10 @@ Accusations, opinions, jokes, and boasts are attributed remarks, not established
 1025. And the crowds, I hear, are tremendous.
 1026. That's why I'm campaigning like crazy.
 1027. It's so stupid.
+1028. Crazy Bernie -- remember, I used to call him Crazy Bernie.
+1029. He signed a lot of dumb deals, but this was a deal, the JCPOA, it was the Iran nuclear deal.
+1030. I said are you stupid?
+1031. People, stupid people wanted me to put sanctions on Russia.
+1032. He's way out of shape.
+1033. Their policies are so dumb.
+1034. And that's what has made it probably the greatest economy in history.

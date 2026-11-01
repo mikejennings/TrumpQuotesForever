@@ -155,3 +155,73 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: speech; assessment: unverified-claim; checked: 2026-10-31T18:38:27.668313+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1028. 2026-10-29 — public-153716b73aed7c8840aa
+
+> Crazy Bernie -- remember, I used to call him Crazy Bernie.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-rock-hill-south-carolina-october-29-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-rock-hill-south-carolina-october-29-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-01T18:59:22.985092+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1029. 2026-10-30 — public-8b1597affabee1f1646f
+
+> He signed a lot of dumb deals, but this was a deal, the JCPOA, it was the Iran nuclear deal.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-pete-mundo-kcmo-kansas-city-radio-october-30-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-pete-mundo-kcmo-kansas-city-radio-october-30-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-11-01T18:59:22.985092+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1030. 2026-10-30 — public-f42cbd5636adc7051c83
+
+> I said are you stupid?
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-daytona-beach-florida-october-30-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-daytona-beach-florida-october-30-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-01T18:59:22.985092+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1031. 2026-10-30 — public-006d2852676c9b0e6336
+
+> People, stupid people wanted me to put sanctions on Russia.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-stephen-hubbard-oval-office-october-30-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-stephen-hubbard-oval-office-october-30-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-01T18:59:22.985092+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1032. 2026-10-29 — public-5afc5a572cf0b715e195
+
+> He's way out of shape.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-after-air-force-one-arrival-october-29-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-after-air-force-one-arrival-october-29-2026/)
+
+Type: press_exchange; assessment: unverified-claim; checked: 2026-11-01T18:59:22.985092+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1033. 2026-10-29 — public-28a39cbcbf1cfffb6f3a
+
+> Their policies are so dumb.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-kurt-alme-aaron-flint-montana-october-29-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-kurt-alme-aaron-flint-montana-october-29-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-01T18:59:22.985092+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1034. 2026-10-29 — public-154b4a07b6802e7e4ed8
+
+> And that's what has made it probably the greatest economy in history.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-justin-dougherty-whns-greenville-south-carolina-october-29-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-justin-dougherty-whns-greenville-south-carolina-october-29-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-11-01T18:59:22.985092+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.

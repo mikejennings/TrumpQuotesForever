@@ -178,5 +178,89 @@
     "assessment": "unverified-claim",
     "checked_at": "2026-10-31T18:38:27.668313+00:00",
     "attribution": "source-matched"
+  },
+  {
+    "id": "public-153716b73aed7c8840aa",
+    "quote": "Crazy Bernie -- remember, I used to call him Crazy Bernie.",
+    "date": "2026-10-29",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-rock-hill-south-carolina-october-29-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-rock-hill-south-carolina-october-29-2026/",
+    "source_kind": "speech",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-01T18:59:22.985092+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "public-8b1597affabee1f1646f",
+    "quote": "He signed a lot of dumb deals, but this was a deal, the JCPOA, it was the Iran nuclear deal.",
+    "date": "2026-10-30",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-pete-mundo-kcmo-kansas-city-radio-october-30-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-pete-mundo-kcmo-kansas-city-radio-october-30-2026/",
+    "source_kind": "interview",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-01T18:59:22.985092+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "public-f42cbd5636adc7051c83",
+    "quote": "I said are you stupid?",
+    "date": "2026-10-30",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-daytona-beach-florida-october-30-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-daytona-beach-florida-october-30-2026/",
+    "source_kind": "speech",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-01T18:59:22.985092+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "public-006d2852676c9b0e6336",
+    "quote": "People, stupid people wanted me to put sanctions on Russia.",
+    "date": "2026-10-30",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-stephen-hubbard-oval-office-october-30-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-stephen-hubbard-oval-office-october-30-2026/",
+    "source_kind": "speech",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-01T18:59:22.985092+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "public-5afc5a572cf0b715e195",
+    "quote": "He's way out of shape.",
+    "date": "2026-10-29",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-after-air-force-one-arrival-october-29-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-after-air-force-one-arrival-october-29-2026/",
+    "source_kind": "press_exchange",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-01T18:59:22.985092+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "public-28a39cbcbf1cfffb6f3a",
+    "quote": "Their policies are so dumb.",
+    "date": "2026-10-29",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-kurt-alme-aaron-flint-montana-october-29-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-kurt-alme-aaron-flint-montana-october-29-2026/",
+    "source_kind": "speech",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-01T18:59:22.985092+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "public-154b4a07b6802e7e4ed8",
+    "quote": "And that's what has made it probably the greatest economy in history.",
+    "date": "2026-10-29",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-justin-dougherty-whns-greenville-south-carolina-october-29-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-justin-dougherty-whns-greenville-south-carolina-october-29-2026/",
+    "source_kind": "interview",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-01T18:59:22.985092+00:00",
+    "attribution": "source-matched"
   }
 ]
