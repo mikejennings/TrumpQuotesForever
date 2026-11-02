@@ -1,4 +1,4 @@
-# All 1,034 entries — Trump Quotes Forever 0.8.0
+# All 1,044 entries — Trump Quotes Forever 0.8.0
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
@@ -1040,3 +1040,13 @@ Accusations, opinions, jokes, and boasts are attributed remarks, not established
 1032. He's way out of shape.
 1033. Their policies are so dumb.
 1034. And that's what has made it probably the greatest economy in history.
+1035. But nobody goes crazy about them, and they're going crazy over this.
+1036. And they're dumb because their policy is so stupid.
+1037. The whole thing is crazy.
+1038. These are the crazy people that want to defund the police, get rid of prisons and all of the other things they want to do.
+1039. You think a good president, whether it's a, as I call them Dumocrats, because they are dumb as hell with their policy.
+1040. Why would you ask such a stupid question?
+1041. All he wants to do is taxi out of business and he's being bankrolled by his former boss, crazy Nancy Pelosi.
+1042. This is a radical left lunatic.
+1043. She wants to have men in women's sports, which is crazy.
+1044. He's been a loser from day one.

@@ -225,3 +225,103 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: interview; assessment: unverified-claim; checked: 2026-11-01T18:59:22.985092+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1035. 2026-11-01 — public-5f66bea02cf0cf3cd98d
+
+> But nobody goes crazy about them, and they're going crazy over this.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-alec-lace-right-side-broadcasting-network-dubuque-iowa-november-1-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-alec-lace-right-side-broadcasting-network-dubuque-iowa-november-1-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-11-02T22:48:31.728182+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1036. 2026-11-01 — public-b163b46b40040b69ab22
+
+> And they're dumb because their policy is so stupid.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-dubuque-iowa-november-1-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-dubuque-iowa-november-1-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-02T22:48:31.728182+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1037. 2026-11-02 — public-d929b7d46b5f4fbd5012
+
+> The whole thing is crazy.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-new-york-gop-candidates-november-2-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-new-york-gop-candidates-november-2-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-02T22:48:31.728182+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1038. 2026-11-02 — public-ffbf35cf5720839c255e
+
+> These are the crazy people that want to defund the police, get rid of prisons and all of the other things they want to do.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-north-carolina-gop-candidates-november-2-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-north-carolina-gop-candidates-november-2-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-02T22:48:31.728182+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1039. 2026-11-01 — public-c50a7aef9987ffd8eed5
+
+> You think a good president, whether it's a, as I call them Dumocrats, because they are dumb as hell with their policy.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-salina-kansas-november-1-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-political-rally-salina-kansas-november-1-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-02T22:48:31.728182+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1040. 2026-10-31 — public-7793ecbde578712d0d81
+
+> Why would you ask such a stupid question?
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-mar-a-lago-halloween-party-october-31-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-mar-a-lago-halloween-party-october-31-2026/)
+
+Type: press_exchange; assessment: unverified-claim; checked: 2026-11-02T22:48:31.728182+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1041. 2026-10-31 — public-4367b783bd8ab50cb91b
+
+> All he wants to do is taxi out of business and he's being bankrolled by his former boss, crazy Nancy Pelosi.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-ohio-gop-candidates-october-31-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-ohio-gop-candidates-october-31-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-02T22:48:31.728182+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1042. 2026-10-31 — public-01722577d9ab5a071293
+
+> This is a radical left lunatic.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-michigan-gop-candidates-october-31-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-michigan-gop-candidates-october-31-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-02T22:48:31.728182+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1043. 2026-10-31 — public-077fc98bfcb2df8b725c
+
+> She wants to have men in women's sports, which is crazy.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-new-york-gop-candidates-october-31-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-new-york-gop-candidates-october-31-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-02T22:48:31.728182+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1044. 2026-10-31 — public-5f1be36c2d13d97b37cf
+
+> He's been a loser from day one.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-florida-gop-candidates-october-31-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-florida-gop-candidates-october-31-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-02T22:48:31.728182+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
