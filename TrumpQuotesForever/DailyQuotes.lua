@@ -47,6 +47,26 @@ local additions = {
     "Their policies are so dumb.",
     -- 1034: public-154b4a07b6802e7e4ed8; 2026-10-29
     "And that's what has made it probably the greatest economy in history.",
+    -- 1035: public-5f66bea02cf0cf3cd98d; 2026-11-01
+    "But nobody goes crazy about them, and they're going crazy over this.",
+    -- 1036: public-b163b46b40040b69ab22; 2026-11-01
+    "And they're dumb because their policy is so stupid.",
+    -- 1037: public-d929b7d46b5f4fbd5012; 2026-11-02
+    "The whole thing is crazy.",
+    -- 1038: public-ffbf35cf5720839c255e; 2026-11-02
+    "These are the crazy people that want to defund the police, get rid of prisons and all of the other things they want to do.",
+    -- 1039: public-c50a7aef9987ffd8eed5; 2026-11-01
+    "You think a good president, whether it's a, as I call them Dumocrats, because they are dumb as hell with their policy.",
+    -- 1040: public-7793ecbde578712d0d81; 2026-10-31
+    "Why would you ask such a stupid question?",
+    -- 1041: public-4367b783bd8ab50cb91b; 2026-10-31
+    "All he wants to do is taxi out of business and he's being bankrolled by his former boss, crazy Nancy Pelosi.",
+    -- 1042: public-01722577d9ab5a071293; 2026-10-31
+    "This is a radical left lunatic.",
+    -- 1043: public-077fc98bfcb2df8b725c; 2026-10-31
+    "She wants to have men in women's sports, which is crazy.",
+    -- 1044: public-5f1be36c2d13d97b37cf; 2026-10-31
+    "He's been a loser from day one.",
 }
 
 for _, quote in ipairs(additions) do

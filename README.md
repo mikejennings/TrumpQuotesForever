@@ -1,7 +1,7 @@
 # Trump Quotes Forever — 0.8.0
 
 Targets **WoW: Forever 1.60.1, Interface 16001**, not Retail or Classic Era.
-No libraries required. 1,034 sourced Trump quotes and nickname fragments, selected randomly without
+No libraries required. 1,044 sourced Trump quotes and nickname fragments, selected randomly without
 immediate repeats. The optional timer waits a random 10–20 minutes between attempts.
 
 ## Downloads and releases
@@ -119,7 +119,7 @@ Edit `TrumpQuotesForever/Quotes.lua`, `TrumpQuotesForever/MoreQuotes.lua`, or
 `TrumpQuotesForever/InsultQuotes.lua`, or `TrumpQuotesForever/ArchiveQuotes.lua` to change the quote pool. Keep complete
 messages below 256 bytes. The pool includes false or unsupported claims, unusual
 phrasing, jokes, and boasts; inclusion does not mean every entry is a lie.
-Read [all 1,034 entries](TrumpQuotesForever/QUOTE_CATALOG.md).
+Read [all 1,044 entries](TrumpQuotesForever/QUOTE_CATALOG.md).
 See [QUOTE_SOURCES.md](TrumpQuotesForever/QUOTE_SOURCES.md) for the dates, sources,
 and context for every entry. Excerpts preserve words, with normalized typography
 and punctuation; some deliberately begin or end mid-sentence.
@@ -132,7 +132,7 @@ reposted. This is an expanding collection, not an exhaustive archive of his rema
 
 The archive expansion adds 812 short post excerpts, documented individually in
 [ARCHIVE_SOURCES.md](TrumpQuotesForever/ARCHIVE_SOURCES.md) and `ARCHIVE_SOURCES.json`.
-The full pool now has 1,034 entries. These are sourced remarks and accusations;
+The full pool now has 1,044 entries. These are sourced remarks and accusations;
 the source ledger describes archive coverage and verification limits.
 
 Run `lua tests/test.lua` from this directory. The tests cover behavior under mocked
