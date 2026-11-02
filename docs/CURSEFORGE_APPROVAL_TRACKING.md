@@ -1,5 +1,32 @@
 # CurseForge approval follow-up
 
+## November 1, 2026 moderation decision
+
+The live author portal now displays a project rejection: "The project Trump
+Quotes is a derivative work from another project which is licensed as All Rights
+Reserved." It separately states: "This does not appear to be an appropriate
+project." No comparison project or specific inappropriate material is named.
+The initial file row still says Under Review; that does not override the project
+rejection. The October evidence below is historical.
+
+The user authorized a clarification request to support and use of their existing
+account login email privately for replies. After explicit CAPTCHA authorization,
+the request was submitted once through the official support form on November 1.
+The confirmation page stated that the ticket was successfully submitted and
+promised an email with details and support contact within 48–72 hours. No ticket
+number was shown. CURSEFORGE_STATUS_INQUIRY_DRAFT.md now preserves the sent copy.
+Do not send a duplicate or further messages without new authorization. The request
+was signed TQ Maintainers and included no personal repository links or git author
+metadata. No quotes, behavior, licenses, visibility or publishing configuration
+have been changed.
+
+The available git history and packaged materials contain no recorded fork or
+other-addon attribution; runtime files appear in the initial commit and settings
+in a later commit. Artwork is documented as AI-generated. These observations
+cannot establish independent creation or determine overlap with an unnamed
+comparison project. The request asks for that project, specific overlap, policy
+grounds and the proper review route without claiming guaranteed approval.
+
 Checked October 30, 2026 (America/Chicago). Approval belongs to CurseForge; no
 approval guarantee or internal queue position is known.
 
