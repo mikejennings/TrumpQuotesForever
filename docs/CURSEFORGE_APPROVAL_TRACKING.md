@@ -27,6 +27,38 @@ cannot establish independent creation or determine overlap with an unnamed
 comparison project. The request asks for that project, specific overlap, policy
 grounds and the proper review route without claiming guaranteed approval.
 
+## Support ticket and bounded comparison — November 1
+
+Acknowledgement email confirms ticket **402898**, addressed to TQ Maintainers:
+https://support.overwolf.com/helpdesk/tickets/402898 . It gives typical response
+times of 72 hours, or 96 on weekends. No substantive moderation response was
+present at this check. The existing twice-daily watch now includes relevant
+connected Gmail replies and the support portal; it must not send further replies
+or duplicate tickets without authorization.
+
+Searches of CurseForge, WoWInterface/WowAce-indexed results and GitHub repository
+metadata did not identify an earlier matching text-quote addon. This search is
+not exhaustive and cannot identify the moderator's unnamed comparison project.
+
+- MiniAuras - Trump Voice Pack (Verz), project 1668524, is All Rights Reserved:
+  https://www.curseforge.com/wow/addons/miniauras-trump-voice-pack . Inspected
+  version 1.0.4, file 8977996: 143 archive entries, including 140 audio files,
+  one Lua registration module and a TOC. Neither code file is byte-identical to
+  a file in our shipped folder. No non-comment Lua lines at least 45 characters
+  long matched our Lua after trimming whitespace. Its registration module
+  targets MiniAurasApi; our addon ships text quotes and no audio files.
+  Archive SHA-256: a1ffa13b535429201ca124f8f4615dc9200b054c295a4e6f8b4de754d301bc8d.
+- TrumpMute (lalibertemarc), project 1743963, is MIT-licensed and filters chat:
+  https://www.curseforge.com/wow/addons/trumpmute . Its public Core.lua had no
+  matching non-comment lines at least 45 characters long against our Lua.
+  Inspected Core.lua SHA-256:
+  2e2d16bceaa47f8988495a1721995395765207907d3d076af137740a7f0b522f.
+
+These limited comparisons found no copied-file or long exact-line matches for
+the inspected versions; they are not comprehensive similarity analysis, proof
+of independent creation or a legal conclusion. Neither project is established
+as the moderator's intended comparison. Await the specific project and overlap.
+
 Checked October 30, 2026 (America/Chicago). Approval belongs to CurseForge; no
 approval guarantee or internal queue position is known.
 
