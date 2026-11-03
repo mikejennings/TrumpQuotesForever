@@ -382,5 +382,17 @@
     "assessment": "unverified-claim",
     "checked_at": "2026-11-02T22:48:31.728182+00:00",
     "attribution": "source-matched"
+  },
+  {
+    "id": "public-61455d84a7cf00644891",
+    "quote": "We have a tremendous crowd.",
+    "date": "2026-11-01",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-after-air-force-one-arrival-november-1-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-after-air-force-one-arrival-november-1-2026/",
+    "source_kind": "press_exchange",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-03T20:31:49.699475+00:00",
+    "attribution": "source-matched"
   }
 ]

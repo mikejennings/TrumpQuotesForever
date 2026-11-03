@@ -325,3 +325,13 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: speech; assessment: unverified-claim; checked: 2026-11-02T22:48:31.728182+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1045. 2026-11-01 — public-61455d84a7cf00644891
+
+> We have a tremendous crowd.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-after-air-force-one-arrival-november-1-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-after-air-force-one-arrival-november-1-2026/)
+
+Type: press_exchange; assessment: unverified-claim; checked: 2026-11-03T20:31:49.699475+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
