@@ -1,4 +1,4 @@
-# All 1,045 entries — Trump Quotes Forever 0.8.0
+# All 1,045 entries — Trump Quotes Forever 0.8.1
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 

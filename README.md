@@ -1,4 +1,4 @@
-# Trump Quotes Forever — 0.8.0
+# Trump Quotes Forever — 0.8.1
 
 Targets **WoW: Forever 1.60.1, Interface 16001**, not Retail or Classic Era.
 No libraries required. 1,045 sourced Trump quotes and nickname fragments, selected randomly without
