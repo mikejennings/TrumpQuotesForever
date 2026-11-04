@@ -18,7 +18,7 @@ LEDGER = 'data/daily_quotes.json'
 FIELDS = {'id', 'quote', 'date', 'source_url', 'evidence_url', 'source_kind',
           'context', 'assessment', 'checked_at', 'attribution'}
 GENERATED = ('TrumpQuotesForever/DailyQuotes.lua', 'TrumpQuotesForever/DAILY_SOURCES.md',
-             'TrumpQuotesForever/QUOTE_CATALOG.md', 'README.md')
+             'TrumpQuotesForever/QUOTE_CATALOG.md', 'README.md', 'TrumpQuotesForever/QUOTES.txt')
 
 
 def canonical(text):
@@ -142,7 +142,8 @@ def render(root=ROOT, check=False):
     readme = re.sub(r'all [\d,]+ entries', f'all {len(all_quotes):,} entries', readme)
     readme = re.sub(r'The full pool now has [\d,]+ entries', f'The full pool now has {len(all_quotes):,} entries', readme)
     outputs = {GENERATED[0]: '\n'.join(lua), GENERATED[1]: '\n'.join(sources).rstrip() + '\n',
-               GENERATED[2]: '\n'.join(catalog) + '\n', GENERATED[3]: readme}
+               GENERATED[2]: '\n'.join(catalog) + '\n', GENERATED[3]: readme,
+               GENERATED[4]: '\n'.join(all_quotes) + '\n'}
     for name, value in outputs.items():
         path = root / name
         if check:

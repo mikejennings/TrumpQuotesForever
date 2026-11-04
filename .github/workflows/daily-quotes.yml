@@ -48,7 +48,8 @@ jobs:
             python3 - <<'PY'
           from pathlib import Path
           allowed = {'data/daily_quotes.json', 'TrumpQuotesForever/DailyQuotes.lua',
-                     'TrumpQuotesForever/DAILY_SOURCES.md', 'TrumpQuotesForever/QUOTE_CATALOG.md', 'README.md'}
+                     'TrumpQuotesForever/DAILY_SOURCES.md', 'TrumpQuotesForever/QUOTE_CATALOG.md',
+                     'TrumpQuotesForever/QUOTES.txt', 'README.md'}
           if set(Path('/tmp/feed-paths.txt').read_text().splitlines()) - allowed:
               raise SystemExit('Unexpected code changes on the proposal branch; review manually.')
           PY
@@ -76,7 +77,7 @@ jobs:
       - name: Accept tested quote-only additions
         run: |
           set -euo pipefail
-          git add data/daily_quotes.json TrumpQuotesForever/DailyQuotes.lua TrumpQuotesForever/DAILY_SOURCES.md TrumpQuotesForever/QUOTE_CATALOG.md README.md
+          git add data/daily_quotes.json TrumpQuotesForever/DailyQuotes.lua TrumpQuotesForever/DAILY_SOURCES.md TrumpQuotesForever/QUOTE_CATALOG.md TrumpQuotesForever/QUOTES.txt README.md
           if ! git diff --cached --quiet; then
             git commit -m 'Propose sourced original-post excerpts for review'
           fi

@@ -120,6 +120,7 @@ Edit `TrumpQuotesForever/Quotes.lua`, `TrumpQuotesForever/MoreQuotes.lua`, or
 messages below 256 bytes. The pool includes false or unsupported claims, unusual
 phrasing, jokes, and boasts; inclusion does not mean every entry is a lie.
 Read [all 1,052 entries](TrumpQuotesForever/QUOTE_CATALOG.md).
+For just the quotes, use [QUOTES.txt](TrumpQuotesForever/QUOTES.txt). The quote generator keeps it current, with one quote per line.
 See [QUOTE_SOURCES.md](TrumpQuotesForever/QUOTE_SOURCES.md) for the dates, sources,
 and context for every entry. Excerpts preserve words, with normalized typography
 and punctuation; some deliberately begin or end mid-sentence.
