@@ -69,6 +69,20 @@ local additions = {
     "He's been a loser from day one.",
     -- 1045: public-61455d84a7cf00644891; 2026-11-01
     "We have a tremendous crowd.",
+    -- 1046: public-35183f689f1893db2a04; 2026-11-02
+    "We were laughed at as being just -- just a stupid, stupid, foolish country that was not going to make it even.",
+    -- 1047: public-bf18afccddfbd89d72b9; 2026-11-03
+    "That's gone; we moved out 5,000 hardcore criminals, most of whom who came in during the Biden -- you know, through that stupid open border.",
+    -- 1048: public-f65e06d1da2ec56721ce; 2026-11-02
+    "I call it Dumocrat because their policy is so bad, so dumb.",
+    -- 1049: public-1c42798a3c53b891e5c7; 2026-11-02
+    "Cove Road, I could talk about Cove Road, which was crazy.",
+    -- 1050: public-8337910edebc45e06131; 2026-11-02
+    "And now she's running to save you from a radical left lunatic named Tranny Annie Andrews.",
+    -- 1051: public-d9f0e4a29bc8d637f569; 2026-11-02
+    "For four years, we were laughed at like we were stupid people.",
+    -- 1052: public-ead52c23852e2daac4bb; 2026-11-02
+    "We put our people -- we put people there, and we have, you know, tremendous oil.",
 }
 
 for _, quote in ipairs(additions) do

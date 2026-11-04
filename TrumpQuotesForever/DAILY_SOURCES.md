@@ -335,3 +335,73 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: press_exchange; assessment: unverified-claim; checked: 2026-11-03T20:31:49.699475+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1046. 2026-11-02 — public-35183f689f1893db2a04
+
+> We were laughed at as being just -- just a stupid, stupid, foolish country that was not going to make it even.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-indiana-gop-candidates-november-2-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-indiana-gop-candidates-november-2-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-04T00:56:11.918358+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1047. 2026-11-03 — public-bf18afccddfbd89d72b9
+
+> That's gone; we moved out 5,000 hardcore criminals, most of whom who came in during the Biden -- you know, through that stupid open border.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-dan-bongino-podcast-live-interview-november-3-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-dan-bongino-podcast-live-interview-november-3-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-11-04T00:56:11.918358+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1048. 2026-11-02 — public-f65e06d1da2ec56721ce
+
+> I call it Dumocrat because their policy is so bad, so dumb.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-louisiana-gop-candidates-november-2-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-louisiana-gop-candidates-november-2-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-04T00:56:11.918358+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1049. 2026-11-02 — public-1c42798a3c53b891e5c7
+
+> Cove Road, I could talk about Cove Road, which was crazy.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-alaska-gop-candidates-november-2-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-alaska-gop-candidates-november-2-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-04T00:56:11.918358+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1050. 2026-11-02 — public-8337910edebc45e06131
+
+> And now she's running to save you from a radical left lunatic named Tranny Annie Andrews.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-south-carolina-gop-candidates-november-2-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-tele-rally-south-carolina-gop-candidates-november-2-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-04T00:56:11.918358+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1051. 2026-11-02 — public-d9f0e4a29bc8d637f569
+
+> For four years, we were laughed at like we were stupid people.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-lincoln-memorial-remarks-november-2-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-speech-midterm-lincoln-memorial-remarks-november-2-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-04T00:56:11.918358+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1052. 2026-11-02 — public-ead52c23852e2daac4bb
+
+> We put our people -- we put people there, and we have, you know, tremendous oil.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-sean-hannity-fox-news-november-2-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-sean-hannity-fox-news-november-2-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-11-04T00:56:11.918358+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
