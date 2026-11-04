@@ -1,4 +1,4 @@
-# All 1,045 entries — Trump Quotes Forever 0.8.0
+# All 1,052 entries — Trump Quotes Forever 0.8.0
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
@@ -1051,3 +1051,10 @@ Accusations, opinions, jokes, and boasts are attributed remarks, not established
 1043. She wants to have men in women's sports, which is crazy.
 1044. He's been a loser from day one.
 1045. We have a tremendous crowd.
+1046. We were laughed at as being just -- just a stupid, stupid, foolish country that was not going to make it even.
+1047. That's gone; we moved out 5,000 hardcore criminals, most of whom who came in during the Biden -- you know, through that stupid open border.
+1048. I call it Dumocrat because their policy is so bad, so dumb.
+1049. Cove Road, I could talk about Cove Road, which was crazy.
+1050. And now she's running to save you from a radical left lunatic named Tranny Annie Andrews.
+1051. For four years, we were laughed at like we were stupid people.
+1052. We put our people -- we put people there, and we have, you know, tremendous oil.
