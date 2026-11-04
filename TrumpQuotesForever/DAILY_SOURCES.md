@@ -405,3 +405,33 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: interview; assessment: unverified-claim; checked: 2026-11-04T00:56:11.918358+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1053. 2026-11-03 — truth-117554198887656582
+
+> Congressman Mike Lawler has been a tremendous friend to the Jewish community and a strong leader in the fight against antisemitism.
+
+[Original source](https://truthsocial.com/@realDonaldTrump/117554198887656582) · [Attribution evidence](https://www.trumpstruth.org/statuses/43448)
+
+Type: account_post; assessment: unverified-claim; checked: 2026-11-04T20:51:05.411174+00:00.
+
+Automatically extracted contiguous sentence from an archive RSS item marked original by Donald J. Trump. Only the original text field was used, not media transcripts, image descriptions or reposts. Other sentences are omitted. Archive attribution is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer; linked context remains available for correction.
+
+## 1054. 2026-11-03 — truth-117554852721008421
+
+> Watching the Pre-Election Results on FoxNews, but I can't stand Jessica Tarlov's voice — DUMB AS A ROCK, but it's the voice that gets me.
+
+[Original source](https://truthsocial.com/@realDonaldTrump/117554852721008421) · [Attribution evidence](https://www.trumpstruth.org/statuses/43443)
+
+Type: account_post; assessment: unverified-claim; checked: 2026-11-04T20:51:05.411174+00:00.
+
+Automatically extracted contiguous sentence from an archive RSS item marked original by Donald J. Trump. Only the original text field was used, not media transcripts, image descriptions or reposts. Other sentences are omitted. Archive attribution is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer; linked context remains available for correction.
+
+## 1055. 2026-11-04 — truth-117556376518256698
+
+> Why does FoxNews have Bill de Blasio, the Worst Mayor in the History of New York City, on air, ranting and raving like a Lunatic?
+
+[Original source](https://truthsocial.com/@realDonaldTrump/117556376518256698) · [Attribution evidence](https://www.trumpstruth.org/statuses/43484)
+
+Type: account_post; assessment: unverified-claim; checked: 2026-11-04T20:51:05.411174+00:00.
+
+Automatically extracted contiguous sentence from an archive RSS item marked original by Donald J. Trump. Only the original text field was used, not media transcripts, image descriptions or reposts. Other sentences are omitted. Archive attribution is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer; linked context remains available for correction.

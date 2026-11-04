@@ -478,5 +478,41 @@
     "assessment": "unverified-claim",
     "checked_at": "2026-11-04T00:56:11.918358+00:00",
     "attribution": "source-matched"
+  },
+  {
+    "id": "truth-117554198887656582",
+    "quote": "Congressman Mike Lawler has been a tremendous friend to the Jewish community and a strong leader in the fight against antisemitism.",
+    "date": "2026-11-03",
+    "source_url": "https://truthsocial.com/@realDonaldTrump/117554198887656582",
+    "evidence_url": "https://www.trumpstruth.org/statuses/43448",
+    "source_kind": "account_post",
+    "context": "Automatically extracted contiguous sentence from an archive RSS item marked original by Donald J. Trump. Only the original text field was used, not media transcripts, image descriptions or reposts. Other sentences are omitted. Archive attribution is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer; linked context remains available for correction.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-04T20:51:05.411174+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "truth-117554852721008421",
+    "quote": "Watching the Pre-Election Results on FoxNews, but I can't stand Jessica Tarlov's voice — DUMB AS A ROCK, but it's the voice that gets me.",
+    "date": "2026-11-03",
+    "source_url": "https://truthsocial.com/@realDonaldTrump/117554852721008421",
+    "evidence_url": "https://www.trumpstruth.org/statuses/43443",
+    "source_kind": "account_post",
+    "context": "Automatically extracted contiguous sentence from an archive RSS item marked original by Donald J. Trump. Only the original text field was used, not media transcripts, image descriptions or reposts. Other sentences are omitted. Archive attribution is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer; linked context remains available for correction.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-04T20:51:05.411174+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "truth-117556376518256698",
+    "quote": "Why does FoxNews have Bill de Blasio, the Worst Mayor in the History of New York City, on air, ranting and raving like a Lunatic?",
+    "date": "2026-11-04",
+    "source_url": "https://truthsocial.com/@realDonaldTrump/117556376518256698",
+    "evidence_url": "https://www.trumpstruth.org/statuses/43484",
+    "source_kind": "account_post",
+    "context": "Automatically extracted contiguous sentence from an archive RSS item marked original by Donald J. Trump. Only the original text field was used, not media transcripts, image descriptions or reposts. Other sentences are omitted. Archive attribution is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer; linked context remains available for correction.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-04T20:51:05.411174+00:00",
+    "attribution": "source-matched"
   }
 ]
