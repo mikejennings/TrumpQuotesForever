@@ -83,6 +83,12 @@ local additions = {
     "For four years, we were laughed at like we were stupid people.",
     -- 1052: public-ead52c23852e2daac4bb; 2026-11-02
     "We put our people -- we put people there, and we have, you know, tremendous oil.",
+    -- 1053: truth-117554198887656582; 2026-11-03
+    "Congressman Mike Lawler has been a tremendous friend to the Jewish community and a strong leader in the fight against antisemitism.",
+    -- 1054: truth-117554852721008421; 2026-11-03
+    "Watching the Pre-Election Results on FoxNews, but I can't stand Jessica Tarlov's voice — DUMB AS A ROCK, but it's the voice that gets me.",
+    -- 1055: truth-117556376518256698; 2026-11-04
+    "Why does FoxNews have Bill de Blasio, the Worst Mayor in the History of New York City, on air, ranting and raving like a Lunatic?",
 }
 
 for _, quote in ipairs(additions) do

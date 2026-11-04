@@ -1,4 +1,4 @@
-# All 1,052 entries — Trump Quotes Forever 0.8.0
+# All 1,055 entries — Trump Quotes Forever 0.8.0
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
@@ -1058,3 +1058,6 @@ Accusations, opinions, jokes, and boasts are attributed remarks, not established
 1050. And now she's running to save you from a radical left lunatic named Tranny Annie Andrews.
 1051. For four years, we were laughed at like we were stupid people.
 1052. We put our people -- we put people there, and we have, you know, tremendous oil.
+1053. Congressman Mike Lawler has been a tremendous friend to the Jewish community and a strong leader in the fight against antisemitism.
+1054. Watching the Pre-Election Results on FoxNews, but I can't stand Jessica Tarlov's voice — DUMB AS A ROCK, but it's the voice that gets me.
+1055. Why does FoxNews have Bill de Blasio, the Worst Mayor in the History of New York City, on air, ranting and raving like a Lunatic?
