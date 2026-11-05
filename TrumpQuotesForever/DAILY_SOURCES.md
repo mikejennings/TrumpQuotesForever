@@ -435,3 +435,23 @@ Automatically extracted contiguous sentence from an archive RSS item marked orig
 Type: account_post; assessment: unverified-claim; checked: 2026-11-04T20:51:05.411174+00:00.
 
 Automatically extracted contiguous sentence from an archive RSS item marked original by Donald J. Trump. Only the original text field was used, not media transcripts, image descriptions or reposts. Other sentences are omitted. Archive attribution is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer; linked context remains available for correction.
+
+## 1056. 2026-10-30 — public-363d884dd9dbbf83b9ee
+
+> And he was just a tremendous guy and we miss him. You know, you -- I think we're always going to miss him, special.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-benny-johnson-benny-show-daytona-beach-florida-october-30-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-benny-johnson-benny-show-daytona-beach-florida-october-30-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-11-05T21:08:05.593244+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1057. 2026-10-30 — public-38aae2e7e5c2c74d6997
+
+> We give tremendous tax cuts.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-miranda-devine-pod-force-one-new-york-post-october-30-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-miranda-devine-pod-force-one-new-york-post-october-30-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-11-05T21:08:05.593244+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
