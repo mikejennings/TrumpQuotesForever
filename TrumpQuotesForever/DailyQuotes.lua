@@ -89,6 +89,10 @@ local additions = {
     "Watching the Pre-Election Results on FoxNews, but I can't stand Jessica Tarlov's voice — DUMB AS A ROCK, but it's the voice that gets me.",
     -- 1055: truth-117556376518256698; 2026-11-04
     "Why does FoxNews have Bill de Blasio, the Worst Mayor in the History of New York City, on air, ranting and raving like a Lunatic?",
+    -- 1056: public-363d884dd9dbbf83b9ee; 2026-10-30
+    "And he was just a tremendous guy and we miss him. You know, you -- I think we're always going to miss him, special.",
+    -- 1057: public-38aae2e7e5c2c74d6997; 2026-10-30
+    "We give tremendous tax cuts.",
 }
 
 for _, quote in ipairs(additions) do
