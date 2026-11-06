@@ -455,3 +455,33 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: interview; assessment: unverified-claim; checked: 2026-11-05T21:08:05.593244+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1058. 2026-11-04 — public-1cc95aa13b577aa6676a
+
+> So you'll have tremendous, uh, it's just a tremendous structure.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-white-house-ballroom-construction-november-4-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-white-house-ballroom-construction-november-4-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-06T20:28:25.528707+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1059. 2026-11-03 — public-547507862b54094be744
+
+> But you've got the greatest husband, and he's got the greatest wife, and it's going to be fantastic.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-fox-and-friends-telephone-live-november-3-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-fox-and-friends-telephone-live-november-3-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-11-06T20:28:25.528707+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1060. 2026-11-03 — public-bd258413f0a90cdae5eb
+
+> We had tremendous rallies.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-bret-baier-martha-maccallum-fox-news-november-3-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-bret-baier-martha-maccallum-fox-news-november-3-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-11-06T20:28:25.528707+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
