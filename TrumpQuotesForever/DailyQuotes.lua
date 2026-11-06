@@ -93,6 +93,12 @@ local additions = {
     "And he was just a tremendous guy and we miss him. You know, you -- I think we're always going to miss him, special.",
     -- 1057: public-38aae2e7e5c2c74d6997; 2026-10-30
     "We give tremendous tax cuts.",
+    -- 1058: public-1cc95aa13b577aa6676a; 2026-11-04
+    "So you'll have tremendous, uh, it's just a tremendous structure.",
+    -- 1059: public-547507862b54094be744; 2026-11-03
+    "But you've got the greatest husband, and he's got the greatest wife, and it's going to be fantastic.",
+    -- 1060: public-bd258413f0a90cdae5eb; 2026-11-03
+    "We had tremendous rallies.",
 }
 
 for _, quote in ipairs(additions) do
