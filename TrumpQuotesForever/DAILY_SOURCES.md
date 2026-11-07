@@ -485,3 +485,13 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: interview; assessment: unverified-claim; checked: 2026-11-06T20:28:25.528707+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1061. 2026-11-05 — public-13381798dac0a5e1a5ef
+
+> In other words, if we took tariffs off right now, let's -- you know, I watch these stupid people.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-executive-order-oval-office-november-5-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-executive-order-oval-office-november-5-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-07T18:51:09.272083+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.

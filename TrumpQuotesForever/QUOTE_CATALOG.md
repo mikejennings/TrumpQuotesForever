@@ -1,4 +1,4 @@
-# All 1,060 entries — Trump Quotes Forever 0.8.0
+# All 1,061 entries — Trump Quotes Forever 0.8.0
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
@@ -1066,3 +1066,4 @@ Accusations, opinions, jokes, and boasts are attributed remarks, not established
 1058. So you'll have tremendous, uh, it's just a tremendous structure.
 1059. But you've got the greatest husband, and he's got the greatest wife, and it's going to be fantastic.
 1060. We had tremendous rallies.
+1061. In other words, if we took tariffs off right now, let's -- you know, I watch these stupid people.

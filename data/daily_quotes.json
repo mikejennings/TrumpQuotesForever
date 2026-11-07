@@ -574,5 +574,17 @@
     "assessment": "unverified-claim",
     "checked_at": "2026-11-06T20:28:25.528707+00:00",
     "attribution": "source-matched"
+  },
+  {
+    "id": "public-13381798dac0a5e1a5ef",
+    "quote": "In other words, if we took tariffs off right now, let's -- you know, I watch these stupid people.",
+    "date": "2026-11-05",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-executive-order-oval-office-november-5-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-executive-order-oval-office-november-5-2026/",
+    "source_kind": "speech",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-07T18:51:09.272083+00:00",
+    "attribution": "source-matched"
   }
 ]
