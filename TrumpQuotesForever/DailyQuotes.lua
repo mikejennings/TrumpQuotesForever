@@ -99,6 +99,8 @@ local additions = {
     "But you've got the greatest husband, and he's got the greatest wife, and it's going to be fantastic.",
     -- 1060: public-bd258413f0a90cdae5eb; 2026-11-03
     "We had tremendous rallies.",
+    -- 1061: public-13381798dac0a5e1a5ef; 2026-11-05
+    "In other words, if we took tariffs off right now, let's -- you know, I watch these stupid people.",
 }
 
 for _, quote in ipairs(additions) do
