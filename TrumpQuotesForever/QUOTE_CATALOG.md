@@ -1,4 +1,4 @@
-# All 1,061 entries — Trump Quotes Forever 0.8.0
+# All 1,063 entries — Trump Quotes Forever 0.8.0
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
@@ -1067,3 +1067,5 @@ Accusations, opinions, jokes, and boasts are attributed remarks, not established
 1059. But you've got the greatest husband, and he's got the greatest wife, and it's going to be fantastic.
 1060. We had tremendous rallies.
 1061. In other words, if we took tariffs off right now, let's -- you know, I watch these stupid people.
+1062. I deal with them a lot and I know that they're crazy.
+1063. He's the greatest Secretary of State that we've ever had in this country, Marco Rubio.

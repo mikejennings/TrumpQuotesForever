@@ -586,5 +586,29 @@
     "assessment": "unverified-claim",
     "checked_at": "2026-11-07T18:51:09.272083+00:00",
     "attribution": "source-matched"
+  },
+  {
+    "id": "public-14ca001d757cd925b681",
+    "quote": "I deal with them a lot and I know that they're crazy.",
+    "date": "2026-11-06",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-after-air-force-one-arrival-november-6-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-after-air-force-one-arrival-november-6-2026/",
+    "source_kind": "press_exchange",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-08T18:53:29.598295+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "public-701d30454f6dffb9b6a7",
+    "quote": "He's the greatest Secretary of State that we've ever had in this country, Marco Rubio.",
+    "date": "2026-11-06",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-transportation-summit-kennedy-space-center-florida-november-6-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-transportation-summit-kennedy-space-center-florida-november-6-2026/",
+    "source_kind": "speech",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-08T18:53:29.598295+00:00",
+    "attribution": "source-matched"
   }
 ]
