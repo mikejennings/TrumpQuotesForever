@@ -495,3 +495,23 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: speech; assessment: unverified-claim; checked: 2026-11-07T18:51:09.272083+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1062. 2026-11-06 — public-14ca001d757cd925b681
+
+> I deal with them a lot and I know that they're crazy.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-after-air-force-one-arrival-november-6-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-after-air-force-one-arrival-november-6-2026/)
+
+Type: press_exchange; assessment: unverified-claim; checked: 2026-11-08T18:53:29.598295+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1063. 2026-11-06 — public-701d30454f6dffb9b6a7
+
+> He's the greatest Secretary of State that we've ever had in this country, Marco Rubio.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-transportation-summit-kennedy-space-center-florida-november-6-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-transportation-summit-kennedy-space-center-florida-november-6-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-08T18:53:29.598295+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.

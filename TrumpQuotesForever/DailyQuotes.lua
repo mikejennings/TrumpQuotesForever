@@ -101,6 +101,10 @@ local additions = {
     "We had tremendous rallies.",
     -- 1061: public-13381798dac0a5e1a5ef; 2026-11-05
     "In other words, if we took tariffs off right now, let's -- you know, I watch these stupid people.",
+    -- 1062: public-14ca001d757cd925b681; 2026-11-06
+    "I deal with them a lot and I know that they're crazy.",
+    -- 1063: public-701d30454f6dffb9b6a7; 2026-11-06
+    "He's the greatest Secretary of State that we've ever had in this country, Marco Rubio.",
 }
 
 for _, quote in ipairs(additions) do
