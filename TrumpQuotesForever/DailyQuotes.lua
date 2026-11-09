@@ -105,6 +105,16 @@ local additions = {
     "I deal with them a lot and I know that they're crazy.",
     -- 1063: public-701d30454f6dffb9b6a7; 2026-11-06
     "He's the greatest Secretary of State that we've ever had in this country, Marco Rubio.",
+    -- 1064: public-aca994a1d26130974b08; 2026-11-08
+    "You know why? 'Cause they're crazy. Thank you very much, everyone.",
+    -- 1065: public-a33117b4e9a449b40b5e; 2026-11-09
+    "We have a tremendous bench. I have so many people that I have great relationships with,",
+    -- 1066: public-725a669bd20f1ad8b15a; 2026-11-08
+    "Other -- but after they leave, they go crazy.",
+    -- 1067: public-ad4af9068e84c0a56465; 2026-11-06
+    "And you know, they have that stupid straw poll, right?",
+    -- 1068: truth-117582778301201947; 2026-11-08
+    "Coupled with history’s greatest Naval Blockade, very little gets into, or out of, Iran!",
 }
 
 for _, quote in ipairs(additions) do
