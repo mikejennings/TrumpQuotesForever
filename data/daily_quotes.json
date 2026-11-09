@@ -610,5 +610,65 @@
     "assessment": "unverified-claim",
     "checked_at": "2026-11-08T18:53:29.598295+00:00",
     "attribution": "source-matched"
+  },
+  {
+    "id": "public-aca994a1d26130974b08",
+    "quote": "You know why? 'Cause they're crazy. Thank you very much, everyone.",
+    "date": "2026-11-08",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-before-air-force-one-departure-november-8-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-before-air-force-one-departure-november-8-2026/",
+    "source_kind": "press_exchange",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-09T23:28:15.092622+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "public-a33117b4e9a449b40b5e",
+    "quote": "We have a tremendous bench. I have so many people that I have great relationships with,",
+    "date": "2026-11-09",
+    "source_url": "https://www.pbs.org/newshour/politics/trump-says-his-deportation-policy-might-have-been-too-tough-for-midterm-voters",
+    "evidence_url": "https://www.pbs.org/newshour/politics/trump-says-his-deportation-policy-might-have-been-too-tough-for-midterm-voters",
+    "source_kind": "news_report",
+    "context": "Direct quotation explicitly attributed to Donald Trump in a publisher article paragraph. The record date is article publication, not a verified time of utterance; other article context is omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-09T23:28:15.092622+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "public-725a669bd20f1ad8b15a",
+    "quote": "Other -- but after they leave, they go crazy.",
+    "date": "2026-11-08",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-ross-douthat-cbs-news-60-minutes-november-8-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-ross-douthat-cbs-news-60-minutes-november-8-2026/",
+    "source_kind": "interview",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-09T23:28:15.092622+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "public-ad4af9068e84c0a56465",
+    "quote": "And you know, they have that stupid straw poll, right?",
+    "date": "2026-11-06",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-cpac-retreat-mar-a-lago-november-6-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-cpac-retreat-mar-a-lago-november-6-2026/",
+    "source_kind": "speech",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-09T23:28:15.092622+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "truth-117582778301201947",
+    "quote": "Coupled with history’s greatest Naval Blockade, very little gets into, or out of, Iran!",
+    "date": "2026-11-08",
+    "source_url": "https://truthsocial.com/@realDonaldTrump/117582778301201947",
+    "evidence_url": "https://www.trumpstruth.org/statuses/43528",
+    "source_kind": "account_post",
+    "context": "Automatically extracted contiguous sentence from an archive RSS item marked original by Donald J. Trump. Only the original text field was used, not media transcripts, image descriptions or reposts. Other sentences are omitted. Archive attribution is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer; linked context remains available for correction.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-09T23:28:15.092622+00:00",
+    "attribution": "source-matched"
   }
 ]

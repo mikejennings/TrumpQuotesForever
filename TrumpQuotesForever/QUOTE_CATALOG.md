@@ -1,4 +1,4 @@
-# All 1,063 entries — Trump Quotes Forever 0.8.0
+# All 1,068 entries — Trump Quotes Forever 0.8.0
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
@@ -1069,3 +1069,8 @@ Accusations, opinions, jokes, and boasts are attributed remarks, not established
 1061. In other words, if we took tariffs off right now, let's -- you know, I watch these stupid people.
 1062. I deal with them a lot and I know that they're crazy.
 1063. He's the greatest Secretary of State that we've ever had in this country, Marco Rubio.
+1064. You know why? 'Cause they're crazy. Thank you very much, everyone.
+1065. We have a tremendous bench. I have so many people that I have great relationships with,
+1066. Other -- but after they leave, they go crazy.
+1067. And you know, they have that stupid straw poll, right?
+1068. Coupled with history’s greatest Naval Blockade, very little gets into, or out of, Iran!

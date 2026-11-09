@@ -515,3 +515,53 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: speech; assessment: unverified-claim; checked: 2026-11-08T18:53:29.598295+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1064. 2026-11-08 — public-aca994a1d26130974b08
+
+> You know why? 'Cause they're crazy. Thank you very much, everyone.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-before-air-force-one-departure-november-8-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-before-air-force-one-departure-november-8-2026/)
+
+Type: press_exchange; assessment: unverified-claim; checked: 2026-11-09T23:28:15.092622+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1065. 2026-11-09 — public-a33117b4e9a449b40b5e
+
+> We have a tremendous bench. I have so many people that I have great relationships with,
+
+[Original source](https://www.pbs.org/newshour/politics/trump-says-his-deportation-policy-might-have-been-too-tough-for-midterm-voters) · [Attribution evidence](https://www.pbs.org/newshour/politics/trump-says-his-deportation-policy-might-have-been-too-tough-for-midterm-voters)
+
+Type: news_report; assessment: unverified-claim; checked: 2026-11-09T23:28:15.092622+00:00.
+
+Direct quotation explicitly attributed to Donald Trump in a publisher article paragraph. The record date is article publication, not a verified time of utterance; other article context is omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1066. 2026-11-08 — public-725a669bd20f1ad8b15a
+
+> Other -- but after they leave, they go crazy.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-ross-douthat-cbs-news-60-minutes-november-8-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-ross-douthat-cbs-news-60-minutes-november-8-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-11-09T23:28:15.092622+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1067. 2026-11-06 — public-ad4af9068e84c0a56465
+
+> And you know, they have that stupid straw poll, right?
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-cpac-retreat-mar-a-lago-november-6-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-cpac-retreat-mar-a-lago-november-6-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-09T23:28:15.092622+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1068. 2026-11-08 — truth-117582778301201947
+
+> Coupled with history’s greatest Naval Blockade, very little gets into, or out of, Iran!
+
+[Original source](https://truthsocial.com/@realDonaldTrump/117582778301201947) · [Attribution evidence](https://www.trumpstruth.org/statuses/43528)
+
+Type: account_post; assessment: unverified-claim; checked: 2026-11-09T23:28:15.092622+00:00.
+
+Automatically extracted contiguous sentence from an archive RSS item marked original by Donald J. Trump. Only the original text field was used, not media transcripts, image descriptions or reposts. Other sentences are omitted. Archive attribution is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer; linked context remains available for correction.
