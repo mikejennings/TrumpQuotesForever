@@ -565,3 +565,13 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: account_post; assessment: unverified-claim; checked: 2026-11-09T23:28:15.092622+00:00.
 
 Automatically extracted contiguous sentence from an archive RSS item marked original by Donald J. Trump. Only the original text field was used, not media transcripts, image descriptions or reposts. Other sentences are omitted. Archive attribution is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer; linked context remains available for correction.
+
+## 1069. 2026-11-09 — public-37397223b34143dd7f53
+
+> Massie's a loser, just like you're a loser at CNN.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-press-conference-unscheduled-white-house-november-9-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-press-conference-unscheduled-white-house-november-9-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-10T20:53:31.572525+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
