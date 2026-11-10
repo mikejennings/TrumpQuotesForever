@@ -670,5 +670,17 @@
     "assessment": "unverified-claim",
     "checked_at": "2026-11-09T23:28:15.092622+00:00",
     "attribution": "source-matched"
+  },
+  {
+    "id": "public-37397223b34143dd7f53",
+    "quote": "Massie's a loser, just like you're a loser at CNN.",
+    "date": "2026-11-09",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-conference-unscheduled-white-house-november-9-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-press-conference-unscheduled-white-house-november-9-2026/",
+    "source_kind": "speech",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-10T20:53:31.572525+00:00",
+    "attribution": "source-matched"
   }
 ]

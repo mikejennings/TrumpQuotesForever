@@ -1,4 +1,4 @@
-# All 1,068 entries — Trump Quotes Forever 0.8.0
+# All 1,069 entries — Trump Quotes Forever 0.8.0
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
@@ -1074,3 +1074,4 @@ Accusations, opinions, jokes, and boasts are attributed remarks, not established
 1066. Other -- but after they leave, they go crazy.
 1067. And you know, they have that stupid straw poll, right?
 1068. Coupled with history’s greatest Naval Blockade, very little gets into, or out of, Iran!
+1069. Massie's a loser, just like you're a loser at CNN.

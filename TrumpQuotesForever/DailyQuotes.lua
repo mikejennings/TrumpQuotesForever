@@ -115,6 +115,8 @@ local additions = {
     "And you know, they have that stupid straw poll, right?",
     -- 1068: truth-117582778301201947; 2026-11-08
     "Coupled with history’s greatest Naval Blockade, very little gets into, or out of, Iran!",
+    -- 1069: public-37397223b34143dd7f53; 2026-11-09
+    "Massie's a loser, just like you're a loser at CNN.",
 }
 
 for _, quote in ipairs(additions) do
