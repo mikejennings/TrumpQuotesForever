@@ -117,6 +117,8 @@ local additions = {
     "Coupled with history’s greatest Naval Blockade, very little gets into, or out of, Iran!",
     -- 1069: public-37397223b34143dd7f53; 2026-11-09
     "Massie's a loser, just like you're a loser at CNN.",
+    -- 1070: truth-117594721408592840; 2026-11-10
+    "Every single Republican, except Thomas Massie, a major LOSER, voted in favor of Pete.",
 }
 
 for _, quote in ipairs(additions) do

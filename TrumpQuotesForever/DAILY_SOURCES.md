@@ -575,3 +575,13 @@ Automatically extracted contiguous sentence from an archive RSS item marked orig
 Type: speech; assessment: unverified-claim; checked: 2026-11-10T20:53:31.572525+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1070. 2026-11-10 — truth-117594721408592840
+
+> Every single Republican, except Thomas Massie, a major LOSER, voted in favor of Pete.
+
+[Original source](https://truthsocial.com/@realDonaldTrump/117594721408592840) · [Attribution evidence](https://www.trumpstruth.org/statuses/43547)
+
+Type: account_post; assessment: unverified-claim; checked: 2026-11-11T21:27:50.583964+00:00.
+
+Automatically extracted contiguous sentence from an archive RSS item marked original by Donald J. Trump. Only the original text field was used, not media transcripts, image descriptions or reposts. Other sentences are omitted. Archive attribution is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer; linked context remains available for correction.
