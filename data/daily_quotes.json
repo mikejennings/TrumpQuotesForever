@@ -694,5 +694,17 @@
     "assessment": "unverified-claim",
     "checked_at": "2026-11-11T21:27:50.583964+00:00",
     "attribution": "source-matched"
+  },
+  {
+    "id": "public-1175a58feedb0137b098",
+    "quote": "Great spirit; we have a tremendous spirit.",
+    "date": "2026-11-11",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-veterans-day-arlington-national-cemetery-november-11-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-veterans-day-arlington-national-cemetery-november-11-2026/",
+    "source_kind": "speech",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-12T21:29:53.580808+00:00",
+    "attribution": "source-matched"
   }
 ]

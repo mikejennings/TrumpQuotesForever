@@ -119,6 +119,8 @@ local additions = {
     "Massie's a loser, just like you're a loser at CNN.",
     -- 1070: truth-117594721408592840; 2026-11-10
     "Every single Republican, except Thomas Massie, a major LOSER, voted in favor of Pete.",
+    -- 1071: public-1175a58feedb0137b098; 2026-11-11
+    "Great spirit; we have a tremendous spirit.",
 }
 
 for _, quote in ipairs(additions) do
