@@ -1,4 +1,4 @@
-# All 1,071 entries — Trump Quotes Forever 0.8.0
+# All 1,073 entries — Trump Quotes Forever 0.8.0
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
@@ -1077,3 +1077,5 @@ Accusations, opinions, jokes, and boasts are attributed remarks, not established
 1069. Massie's a loser, just like you're a loser at CNN.
 1070. Every single Republican, except Thomas Massie, a major LOSER, voted in favor of Pete.
 1071. Great spirit; we have a tremendous spirit.
+1072. They're building like crazy.
+1073. And, you know, uh, okay, so I tell you a crazy story.

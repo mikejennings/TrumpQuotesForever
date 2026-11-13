@@ -595,3 +595,23 @@ Automatically extracted contiguous sentence from an archive RSS item marked orig
 Type: speech; assessment: unverified-claim; checked: 2026-11-12T21:29:53.580808+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1072. 2026-11-12 — public-d5b60470f9b62422e9c9
+
+> They're building like crazy.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-stephen-a-smith-online-show-november-12-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-stephen-a-smith-online-show-november-12-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-11-13T20:55:34.530435+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1073. 2026-11-12 — public-fae1c1deb5dfd3613860
+
+> And, you know, uh, okay, so I tell you a crazy story.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-hugh-hewitt-radio-november-12-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-interview-hugh-hewitt-radio-november-12-2026/)
+
+Type: interview; assessment: unverified-claim; checked: 2026-11-13T20:55:34.530435+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
