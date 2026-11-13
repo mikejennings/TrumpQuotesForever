@@ -121,6 +121,10 @@ local additions = {
     "Every single Republican, except Thomas Massie, a major LOSER, voted in favor of Pete.",
     -- 1071: public-1175a58feedb0137b098; 2026-11-11
     "Great spirit; we have a tremendous spirit.",
+    -- 1072: public-d5b60470f9b62422e9c9; 2026-11-12
+    "They're building like crazy.",
+    -- 1073: public-fae1c1deb5dfd3613860; 2026-11-12
+    "And, you know, uh, okay, so I tell you a crazy story.",
 }
 
 for _, quote in ipairs(additions) do

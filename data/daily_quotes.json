@@ -706,5 +706,29 @@
     "assessment": "unverified-claim",
     "checked_at": "2026-11-12T21:29:53.580808+00:00",
     "attribution": "source-matched"
+  },
+  {
+    "id": "public-d5b60470f9b62422e9c9",
+    "quote": "They're building like crazy.",
+    "date": "2026-11-12",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-stephen-a-smith-online-show-november-12-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-stephen-a-smith-online-show-november-12-2026/",
+    "source_kind": "interview",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-13T20:55:34.530435+00:00",
+    "attribution": "source-matched"
+  },
+  {
+    "id": "public-fae1c1deb5dfd3613860",
+    "quote": "And, you know, uh, okay, so I tell you a crazy story.",
+    "date": "2026-11-12",
+    "source_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-hugh-hewitt-radio-november-12-2026/",
+    "evidence_url": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-hugh-hewitt-radio-november-12-2026/",
+    "source_kind": "interview",
+    "context": "Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-13T20:55:34.530435+00:00",
+    "attribution": "source-matched"
   }
 ]
