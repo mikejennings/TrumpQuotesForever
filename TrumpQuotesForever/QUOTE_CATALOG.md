@@ -1,4 +1,4 @@
-# All 1,073 entries — Trump Quotes Forever 0.8.0
+# All 1,076 entries — Trump Quotes Forever 0.8.0
 
 Every chat message adds `- Donald Trump`. The pool includes complete statements, short excerpts, and nickname fragments.
 
@@ -1079,3 +1079,6 @@ Accusations, opinions, jokes, and boasts are attributed remarks, not established
 1071. Great spirit; we have a tremendous spirit.
 1072. They're building like crazy.
 1073. And, you know, uh, okay, so I tell you a crazy story.
+1074. I hope it's not, but it's -- we take it very seriously, because they happen to be crazy.
+1075. We were not the greatest country two years ago, but now we're the greatest country again.
+1076. We make the greatest submarines anywhere in the world and we're working with Australia and others on that.

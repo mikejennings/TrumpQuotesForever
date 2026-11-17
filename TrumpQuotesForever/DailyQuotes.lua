@@ -125,6 +125,12 @@ local additions = {
     "They're building like crazy.",
     -- 1073: public-fae1c1deb5dfd3613860; 2026-11-12
     "And, you know, uh, okay, so I tell you a crazy story.",
+    -- 1074: public-fe5f1fbb9daf4a6d3555; 2026-11-17
+    "I hope it's not, but it's -- we take it very seriously, because they happen to be crazy.",
+    -- 1075: public-c75fc347a1b86fd03525; 2026-11-16
+    "We were not the greatest country two years ago, but now we're the greatest country again.",
+    -- 1076: public-1cc7c67d5e5ebb1cad3a; 2026-11-17
+    "We make the greatest submarines anywhere in the world and we're working with Australia and others on that.",
 }
 
 for _, quote in ipairs(additions) do
