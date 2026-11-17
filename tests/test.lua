@@ -42,10 +42,17 @@ local function Widget(name)
         if not wasShown and self.scripts.OnShow then self.scripts.OnShow(self) end
     end
     function w:CreateFontString() return Widget() end
+    function w:CreateTexture()
+        return {SetAllPoints = function() end, SetColorTexture = function() end}
+    end
     return w
 end
-function CreateFrame(kind, name)
+function CreateFrame(kind, name, parent)
     local w = Widget(name)
+    if parent then
+        parent.children = parent.children or {}
+        parent.children[#parent.children + 1] = w
+    end
     if not name and not kind then error("missing frame type") end
     -- The first frame is the addon's event dispatcher.
     if not events.frame then events.frame = w end
@@ -142,6 +149,27 @@ panel.start.scripts.OnClick(); assert(not ns.Controller.GetState().running)
 panel:Hide(); command("settings")
 assert(tonumber(panel.minimum:GetText()) == 1.5 and not ns.Controller.GetState().running)
 assert(#sends == 2)
+-- Apply with real click arguments must start a stopped timer and persist intent.
+panel.apply.scripts.OnClick(panel.apply, "LeftButton")
+assert(ns.Controller.GetState().running and TrumpQuotesForeverDB.enabled == true,
+    "Apply must enable and start the timer")
+assert(ns.Controller.GetState().remaining >= 90)
+local remaining = ns.Controller.GetState().remaining
+now = now + 5
+assert(ns.Controller.GetState().remaining == remaining - 5)
+panel.scripts.OnUpdate(panel, 1)
+assert(panel.status:GetText():find("next check in"))
+local beforeReload = jobs[#jobs]
+events.handler(nil, "ADDON_LOADED", "TrumpQuotesForever")
+assert(beforeReload.cancelled and ns.Controller.GetState().running,
+    "reload must replace the old timer and restore enabled state")
+assert(#sends == 2)
+panel.stop.scripts.OnClick(panel.stop, "LeftButton")
+assert(TrumpQuotesForeverDB.enabled == false)
+local stoppedJobs = #jobs
+events.handler(nil, "ADDON_LOADED", "TrumpQuotesForever")
+assert(#jobs == stoppedJobs and not ns.Controller.GetState().running,
+    "explicit Stop must survive reload")
 -- Start applies the visible settings and schedules a delayed first attempt.
 panel.minimum:SetText("2"); panel.maximum:SetText("3")
 panel.start.scripts.OnClick(); assert(ns.Controller.GetState().running)
@@ -154,11 +182,45 @@ assert(panel.status:GetText():find("General %(joined%)"))
 
 local stale = jobs[#jobs]
 command("stop"); stale.callback(); assert(#sends == 2 and stale.cancelled)
-command("start"); afk = true; jobs[#jobs].callback(); assert(#sends == 2)
-afk, instance = false, true; jobs[#jobs].callback(); assert(#sends == 2)
-instance, now, reject = false, 200, true
+command("start"); afk = true; jobs[#jobs].callback()
+assert(not widgets.TrumpQuotesForeverQuotePrompt and #sends == 2)
+afk, instance = false, true; jobs[#jobs].callback()
+assert(not widgets.TrumpQuotesForeverQuotePrompt and #sends == 2)
+instance, now = false, 200
 local count = #jobs
-jobs[#jobs].callback(); assert(#jobs == count) -- errors stop rather than retry
+jobs[#jobs].callback()
+local prompt = assert(widgets.TrumpQuotesForeverQuotePrompt)
+local post, skip = prompt.children[1], prompt.children[2]
+assert(prompt:IsShown() and post:GetText() == "Post quote" and skip:GetText() == "Skip")
+assert(#jobs == count and #sends == 2) -- timer waits for a decision without sending
+local previousDraft = drafts.text
+channelID = 8
+post.scripts.OnClick()
+assert(#sends == 3 and sends[3][3] == "8" and drafts.text == previousDraft)
+assert(not prompt:IsShown() and #jobs == count + 1)
+post.scripts.OnClick(); assert(#sends == 3) -- stale click cannot send twice
+jobs[#jobs].callback()
+skip.scripts.OnClick()
+assert(#sends == 3 and not prompt:IsShown() and #jobs == count + 2)
+
+jobs[#jobs].callback()
+assert(prompt:IsShown())
+assert(ns.Controller.Apply("Trade", 2, 3))
+assert(not prompt:IsShown())
+post.scripts.OnClick(); assert(#sends == 3) -- changing destination clears the old prompt
+tradeJoined = true
+jobs[#jobs].callback()
+assert(prompt:IsShown())
+command("stop")
+assert(not prompt:IsShown())
+post.scripts.OnClick(); assert(#sends == 3)
+
+command("start")
+now, reject = 300, true
+count = #jobs
+jobs[#jobs].callback()
+post.scripts.OnClick()
+assert(not prompt:IsShown() and #jobs == count and #sends == 3)
 command("start"); assert(#jobs == count)
 assert(not panel.start.enabled and panel.status:GetText():find("Blocked by client"))
 reject = false

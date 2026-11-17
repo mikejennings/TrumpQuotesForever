@@ -1,5 +1,5 @@
 local _, ns = ...
-local panel, category, selectedChannel
+local panel, category, selectedChannel, quotePrompt
 
 local function Label(parent, text, x, y, font, width)
     local label = parent:CreateFontString(nil, "OVERLAY", font or "GameFontNormal")
@@ -30,11 +30,41 @@ local function Minutes(parent, x, y)
     return box
 end
 
+function ns.ShowQuotePrompt(channel)
+    if not quotePrompt then
+        quotePrompt = CreateFrame("Frame", "TrumpQuotesForeverQuotePrompt", UIParent)
+        quotePrompt:SetSize(280, 80)
+        quotePrompt:SetPoint("TOP", UIParent, "TOP", 0, -140)
+        quotePrompt:SetFrameStrata("DIALOG")
+        local background = quotePrompt:CreateTexture(nil, "BACKGROUND")
+        background:SetAllPoints()
+        background:SetColorTexture(0.07, 0.07, 0.07, 0.95)
+        quotePrompt.label = Label(quotePrompt, "", 20, -12, "GameFontNormal", 240)
+        quotePrompt.post = Button(quotePrompt, "Post quote", 20, -42, 120, function()
+            ns.Controller.ResolvePrompt(true)
+        end)
+        quotePrompt.skip = Button(quotePrompt, "Skip", 150, -42, 75, function()
+            ns.Controller.ResolvePrompt(false)
+        end)
+    end
+    quotePrompt.label:SetText("Quote ready for " .. channel:gsub("|", "||"))
+    quotePrompt:Show()
+end
+
+function ns.HideQuotePrompt()
+    if quotePrompt then quotePrompt:Hide() end
+end
+
 function ns.RefreshSettings()
     if not panel then return end
     local state = ns.Controller.GetState()
     local text = state.blocked and "Blocked by client - timer stopped. Use Prepare quote."
-        or (state.running and "Timer running" or "Timer stopped")
+        or (state.promptPending and "Quote ready - click Post quote or Skip."
+        or state.running and "Timer running" or "Timer stopped")
+    if state.running and state.remaining then
+        text = text .. string.format(" - next check in %d:%02d",
+            math.floor(state.remaining / 60), state.remaining % 60)
+    end
     panel.status:SetText(text .. "\nSaved: " .. state.channel
         .. (state.joined and " (joined)" or " (not joined)") .. " | "
         .. state.minimum .. "-" .. state.maximum .. " minutes")
@@ -61,7 +91,11 @@ local function Apply()
         return false
     end
     Fill()
-    panel.feedback:SetText("Settings saved.")
+    local state = ns.Controller.GetState()
+    if not state.running and not state.blocked then ns.Controller.Start() end
+    panel.feedback:SetText(ns.Controller.GetState().running
+        and "Settings saved. Timer running; waiting for the next quote prompt."
+        or "Settings saved. Sending is blocked; use Prepare quote.")
     return true
 end
 
@@ -75,7 +109,7 @@ function ns.InitSettings()
     panel:Hide()
     ns.SettingsPanel = panel
     Label(panel, "Trump Quotes Forever", 20, -20, "GameFontNormalLarge")
-    Label(panel, "Choose a joined chat channel and a random delay between posting attempts.",
+    Label(panel, "Choose a joined chat channel and a random delay between quote prompts.",
         20, -52, "GameFontHighlight", 500)
     Label(panel, "Chat channel", 20, -94)
     panel.channel = CreateFrame("Frame", "TrumpQuotesForeverChannelPicker", panel, "UIDropDownMenuTemplate")
@@ -113,9 +147,7 @@ function ns.InitSettings()
         20, -264, "GameFontHighlightSmall", 500)
     panel.apply = Button(panel, "Apply", 20, -300, 100, Apply)
     panel.start = Button(panel, "Start timer", 132, -300, 110, function()
-        if Apply() and ns.Controller.Start() then
-            panel.feedback:SetText("Timer started. First attempt after a random delay.")
-        end
+        Apply()
     end)
     panel.stop = Button(panel, "Stop timer", 254, -300, 110, function()
         ns.Controller.Stop()
@@ -125,12 +157,20 @@ function ns.InitSettings()
     panel.status = Label(panel, "", 20, -380, "GameFontHighlight", 500)
     panel.preview = Button(panel, "Preview quote", 20, -438, 130, function() ns.Controller.Preview() end)
     panel.prepare = Button(panel, "Prepare quote", 162, -438, 130, function() ns.Controller.Prepare() end)
-    Label(panel, "Settings are saved with Apply or Start. Closing discards unsaved edits.\nTimer starts off after login/reload. If sending is blocked, Prepare quote fills chat; press Enter to send.",
+    Label(panel, "Apply saves settings and starts the timer. Stop pauses it across login/reload.\nThe timer resumes after login/reload if enabled. Prepare quote fills chat; press Enter to send.",
         20, -480, "GameFontHighlightSmall", 500)
     panel:SetScript("OnShow", Fill)
     panel:RegisterEvent("CHANNEL_UI_UPDATE")
     panel:RegisterEvent("PLAYER_ENTERING_WORLD")
     panel:SetScript("OnEvent", ns.RefreshSettings)
+    local elapsedSinceRefresh = 0
+    panel:SetScript("OnUpdate", function(_, elapsed)
+        elapsedSinceRefresh = elapsedSinceRefresh + elapsed
+        if elapsedSinceRefresh >= 1 then
+            elapsedSinceRefresh = 0
+            ns.RefreshSettings()
+        end
+    end)
     category = Settings.RegisterCanvasLayoutCategory(panel, "Trump Quotes Forever")
     Settings.RegisterAddOnCategory(category)
 

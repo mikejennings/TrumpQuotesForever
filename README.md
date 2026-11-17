@@ -2,7 +2,8 @@
 
 Targets **WoW: Forever 1.60.1, Interface 16001**, not Retail or Classic Era.
 No libraries required. 1,061 sourced Trump quotes and nickname fragments, selected randomly without
-immediate repeats. The optional timer waits a random 10–20 minutes between attempts.
+immediate repeats. By default the optional timer waits a random 10–20 minutes
+before showing a **Post quote** button.
 
 ## Downloads and releases
 
@@ -40,15 +41,18 @@ Trump Quotes Forever**. You can also type `/tq` or `/tq settings` to open it.
 - Pick a channel from the list of channels you have joined. The list refreshes
   whenever you open the picker; stored channel names follow zone changes.
 - Enter minimum and maximum minutes, from 1 to 1440. Decimals are allowed.
-- Click **Apply** to save, or **Start timer** to save and begin random attempts.
-  Changing the interval while running cancels the old wait and starts a new one.
+- Click **Apply** or **Start timer** to save and begin waiting for a quote.
+  Changing the channel or interval while running starts a new wait.
+- When the prompt appears near the top of the screen, click **Post quote** to
+  send directly to the selected channel, or **Skip**. Either starts a new wait.
 - **Stop timer** stops immediately, even if the fields contain invalid edits.
 - **Preview quote** shows a quote locally. **Prepare quote** uses your saved
   destination and fills the chat editor so you can press Enter yourself.
 
 Closing the window discards unapplied edits. Opening settings never starts the
 timer or posts a quote. The status shows the saved channel, whether you have
-joined it, and whether the timer is running or blocked by the client.
+joined it, whether the timer is running or blocked by the client, and the time
+remaining until the next check for a quote prompt.
 
 ## Commands
 
@@ -56,23 +60,24 @@ joined it, and whether the timer is running or blocked by the client.
 - `/tq preview`: show a random quote only to you.
 - `/tq post`: attempt one quote to the saved channel.
 - `/tq prepare`: fill the saved channel’s chat editor; review and press Enter yourself.
-- `/tq start`: start random timed send attempts, with the first one after a delay.
+- `/tq start`: start the random timer for the **Post quote** prompt.
 - `/tq stop`: stop immediately.
 - `/tq interval 10 20`: set the random interval in minutes (1–1440).
 - `/tq channel General`: choose a joined channel by its exact base name, including
   localized names on non-English clients. Use `/chatlist` to check names.
 - `/tq status`: show timer, channel, and interval settings.
 
-Settings persist; the timer always starts **off** after login or `/reload`.
-There is a 60-second cooldown between API send attempts. Timed attempts skip AFK,
+Settings and the Start/Stop choice persist across login and `/reload`. An enabled
+timer begins a fresh random wait after loading. First-time installs stay off
+until you click Apply or Start timer.
+There is a 60-second cooldown between API send attempts. Timed prompts skip AFK,
 instances, and missing channels. The channel ID is looked up for every attempt so
 the addon follows General as you change zones. It never auto-joins channels.
 
 ## Client restrictions and current limits
 
-Forever's generated API marks `C_ChatInfo.SendChatMessage` as restricted, including
-macro chat restrictions. This starter cannot guarantee unattended public-channel
-posting. Check `/tq post` in game before enabling the timer. An API error or an
+Forever's generated API marks `C_ChatInfo.SendChatMessage` as restricted. The timer
+shows the prompt, and clicking **Post quote** attempts the send. An API error or an
 addon blocked/forbidden event stops the timer for the session. No successful API
 return proves delivery: server throttles, chat permissions, or silent rejection
 may still prevent messages. `/tq prepare` is the manual-send fallback and also
@@ -80,7 +85,8 @@ needs an in-game check on your build. No restriction bypass is included.
 
 Verified locally with Lua 5.1-compatible code and mocked WoW APIs; **not yet tested
 inside Forever**. Check loading, the minimap launcher, Settings → AddOns, the channel picker,
-Apply/Start/Stop, `/tq post`, `/tq prepare`, and zone changes in the client. If the addon is marked out of date, compare
+Apply/Start/Stop, the timed Post quote and Skip buttons, `/tq post`, `/tq prepare`,
+and zone changes in the client. If the addon is marked out of date, compare
 its interface number with `/dump select(4, GetBuildInfo())`.
 
 ## Daily quote updates and review
