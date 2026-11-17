@@ -615,3 +615,33 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: interview; assessment: unverified-claim; checked: 2026-11-13T20:55:34.530435+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1074. 2026-11-17 — public-fe5f1fbb9daf4a6d3555
+
+> I hope it's not, but it's -- we take it very seriously, because they happen to be crazy.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-photo-op-quad-leaders-asean-manila-november-17-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-photo-op-quad-leaders-asean-manila-november-17-2026/)
+
+Type: press_exchange; assessment: unverified-claim; checked: 2026-11-17T22:28:40.701839+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1075. 2026-11-16 — public-c75fc347a1b86fd03525
+
+> We were not the greatest country two years ago, but now we're the greatest country again.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-before-marine-one-departure-november-16-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-press-gaggle-before-marine-one-departure-november-16-2026/)
+
+Type: press_exchange; assessment: unverified-claim; checked: 2026-11-17T22:28:40.701839+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1076. 2026-11-17 — public-1cc7c67d5e5ebb1cad3a
+
+> We make the greatest submarines anywhere in the world and we're working with Australia and others on that.
+
+[Original source](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-multilateral-meeting-india-japan-australia-asean-manila-november-17-2026/) · [Attribution evidence](https://rollcall.com/factbase/trump/transcript/donald-trump-remarks-multilateral-meeting-india-japan-australia-asean-manila-november-17-2026/)
+
+Type: speech; assessment: unverified-claim; checked: 2026-11-17T22:28:40.701839+00:00.
+
+Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
