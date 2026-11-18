@@ -60,17 +60,16 @@ jobs:
           Use this install ZIP rather than GitHub's automatically generated source archives.
 
           Click TQ beside the minimap, or open Settings > AddOns > Trump Quotes Forever.
-          The posting timer starts off. Automatic sending depends on client permissions;
+          Apply starts randomly timed Post quote prompts; click Post quote to send.
           Prepare quote fills chat for manual sending.
 
           Includes a SHA-256 checksum and release.json metadata identifying the ZIP as
-          the Forever flavor for compatible addon managers. The repository remains private,
-          so GitHub access is required; the ZIP can be shared separately.
+          the Forever flavor for compatible addon managers. Public GitHub release assets
+          can be downloaded and shared directly.
 
           Python, Lua and LuaJIT tests, generated-file and anonymous package checks passed.
           Source commit: {os.environ['GITHUB_SHA']}.
-          The identical ZIP is uploaded to CurseForge for automatic publication
-          after moderator approval. An upload receipt is attached to the release.
+          Published exclusively on GitHub; no CurseForge token is required.
           '''
           Path('dist/release/RELEASE_NOTES.md').write_text(text)
           PY
@@ -100,15 +99,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
-          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
           RELEASE_VERSION: ${{ inputs.version }}
           SOURCE_SHA: ${{ github.sha }}
         run: |
           set -euo pipefail
-          if [ -z "$CF_API_TOKEN" ]; then
-            echo 'Set the CF_API_TOKEN Actions secret before publication.'
-            exit 1
-          fi
           if gh api "repos/${GH_REPO}/git/ref/tags/v${RELEASE_VERSION}" --silent 2>/dev/null; then
             echo "Tag already exists. Use a new TOC version; existing tags are never reused."
             exit 1

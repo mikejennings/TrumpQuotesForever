@@ -19,15 +19,14 @@ generated-output checks. The PR is an audit trail. Existing quote edits and code
 changes are not automatically accepted. Test ZIPs contain REVIEW_ONLY.txt and are
 retained for 30 days; release ZIPs do not contain that marker.
 
-Changed main content is published approximately every five days. The same tested
-ZIP goes to GitHub and CurseForge, with automatic CurseForge publication after
-moderator approval. Uploads require a configured repository secret; the initial
-CurseForge project remains under review. There is no in-game download code.
+Changed main content is published exclusively on GitHub approximately every five
+days, as a tested install ZIP, checksum and Forever addon-manager metadata. No
+CurseForge upload or external token is required. There is no in-game download code.
 
 `DailyQuotes.lua` and `DAILY_SOURCES.md` contain the newer entries; their editable
 source ledger and maintenance tools live in the development repository. The full
 research procedure is in `docs/DAILY_REVIEW.md` there. The addon catalog lists all
-entries in load order. The posting timer still starts off after login/reload.
+entries in load order. Apply starts the random Post quote prompt timer; its enabled state survives login/reload.
 
 Distributed builds use generic author credits. Do not include personal account,
 filesystem, screenshot or Git metadata when distributing a build.

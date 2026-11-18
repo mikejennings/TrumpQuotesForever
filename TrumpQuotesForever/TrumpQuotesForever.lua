@@ -1,7 +1,7 @@
 local addonName, ns = ...
 local Core = ns.Core
 local frame = CreateFrame("Frame")
-local db, timer, running, previous, lastAttempt, blocked
+local db, timer, running, previous, lastAttempt, blocked, promptPending, nextPromptAt
 local generation = 0
 local COOLDOWN = 60
 
@@ -11,8 +11,12 @@ end
 
 local function Stop()
     running = false
+    promptPending = false
+    nextPromptAt = nil
+    if db then db.enabled = false end
     generation = generation + 1
     if timer then timer:Cancel(); timer = nil end
+    ns.HideQuotePrompt()
     if ns.RefreshSettings then ns.RefreshSettings() end
 end
 
@@ -62,15 +66,30 @@ local function Schedule()
     if not running then return end
     local token = generation
     local seconds = math.random(db.minimum, db.maximum)
+    nextPromptAt = GetTime() + seconds
     timer = C_Timer.NewTimer(seconds, function()
         if not running or token ~= generation then return end
         timer = nil
-        -- No backlog or catch-up burst when AFK, zoning, or in an instance.
+        nextPromptAt = nil
+        -- Keep one prompt open and wait for the player before scheduling again.
         if not UnitIsAFK("player") and not IsInInstance() and Channel() then
-            Post()
+            promptPending = true
+            ns.ShowQuotePrompt(db.channel)
+            if ns.RefreshSettings then ns.RefreshSettings() end
+        else
+            Schedule()
         end
-        if running then Schedule() end
     end)
+end
+
+local function ResolvePrompt(post)
+    if not promptPending then return end
+    -- Send from the actual button click so the client sees player input.
+    if post and not Post() then return end
+    promptPending = false
+    ns.HideQuotePrompt()
+    Schedule()
+    if ns.RefreshSettings then ns.RefreshSettings() end
 end
 
 local function Prepare()
@@ -97,9 +116,11 @@ local function Start()
     if blocked then Print("Sending was blocked; use Prepare quote or /reload to retry."); return false end
     Stop()
     running = true
+    db.enabled = true
     Schedule()
     if ns.RefreshSettings then ns.RefreshSettings() end
-    Print("Timer started: " .. db.minimum / 60 .. "-" .. db.maximum / 60 .. " minutes; first attempt after that delay.")
+    Print("Timer started: a Post quote button will appear in "
+        .. db.minimum / 60 .. "-" .. db.maximum / 60 .. " minutes when your channel is available.")
     return true
 end
 
@@ -111,10 +132,10 @@ local function ApplySettings(channel, low, high)
     end
     local minimum, maximum = Core.Range(low, high)
     if not minimum then return false, maximum end
-    local changed = minimum ~= db.minimum or maximum ~= db.maximum
+    local changed = channel ~= db.channel or minimum ~= db.minimum or maximum ~= db.maximum
     -- Validate everything before changing saved settings or the active timer.
     db.channel, db.minimum, db.maximum = channel, minimum, maximum
-    if running and changed then Stop(); running = true; Schedule() end
+    if running and changed then Start() end
     if ns.RefreshSettings then ns.RefreshSettings() end
     return true
 end
@@ -122,7 +143,9 @@ end
 ns.Controller = {
     GetState = function()
         return {channel = db.channel, minimum = db.minimum / 60, maximum = db.maximum / 60,
-            running = not not running, blocked = not not blocked, joined = not not Channel()}
+            running = not not running, blocked = not not blocked, joined = not not Channel(),
+            promptPending = not not promptPending,
+            remaining = nextPromptAt and math.max(0, math.ceil(nextPromptAt - GetTime()))}
     end,
     GetChannels = function()
         local result, channels = {}, {GetChannelList()}
@@ -134,6 +157,7 @@ ns.Controller = {
         return result
     end,
     Apply = ApplySettings, Start = Start, Stop = Stop, Prepare = Prepare,
+    ResolvePrompt = ResolvePrompt,
     Preview = function() local message = Quote(); if message then Print(message) end end,
 }
 
@@ -165,7 +189,7 @@ local function Command(input)
         Print("Random interval: " .. db.minimum / 60 .. "-" .. db.maximum / 60 .. " minutes.")
     elseif command == "status" then
         local id = Channel()
-        Print((running and "Running" or "Stopped") .. "; " .. db.channel
+        Print((promptPending and "Quote ready" or running and "Running" or "Stopped") .. "; " .. db.channel
             .. (id and " (joined)" or " (not joined)") .. "; "
             .. db.minimum / 60 .. "-" .. db.maximum / 60 .. " minutes.")
     else
@@ -188,13 +212,18 @@ frame:SetScript("OnEvent", function(_, event, name)
     if name ~= addonName then return end
     if type(TrumpQuotesForeverDB) ~= "table" then TrumpQuotesForeverDB = {} end
     db = TrumpQuotesForeverDB
+    local resume = db.enabled == true
     if type(db.channel) ~= "string" or db.channel == "" then db.channel = "General" end
     local low, high = Core.Range(tonumber(db.minimum) and db.minimum / 60,
         tonumber(db.maximum) and db.maximum / 60)
     db.minimum, db.maximum = low or 600, low and high or 1200
+    Stop()
+    blocked = false
     SLASH_TRUMPQUOTESFOREVER1 = "/tq"
     SLASH_TRUMPQUOTESFOREVER2 = "/trumpquotes"
     SlashCmdList.TRUMPQUOTESFOREVER = Command
     if ns.InitSettings then ns.InitSettings() end
-    Print("Loaded for Forever. Timer is off. Click the TQ minimap button for settings.")
+    if resume then Start() end
+    Print("Loaded for Forever. Timer is " .. (running and "on" or "off")
+        .. ". Click the TQ minimap button for settings.")
 end)
