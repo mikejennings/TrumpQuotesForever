@@ -766,5 +766,17 @@
     "assessment": "unverified-claim",
     "checked_at": "2026-11-17T22:28:40.701839+00:00",
     "attribution": "source-matched"
+  },
+  {
+    "id": "public-0fdfe93f76ba1756d6f4",
+    "quote": "They’re just amazingly talented. Many of them could be in any of the greatest orchestras in the world,",
+    "date": "2026-11-21",
+    "source_url": "https://www.theguardian.com/us-news/live/2026/nov/20/donald-trump-brooke-rollins-religion-sean-cairncross-senate-alaska-white-house-press-conference-us-politics-latest-news-updates",
+    "evidence_url": "https://www.theguardian.com/us-news/live/2026/nov/20/donald-trump-brooke-rollins-religion-sean-cairncross-senate-alaska-white-house-press-conference-us-politics-latest-news-updates",
+    "source_kind": "news_report",
+    "context": "Direct quotation explicitly attributed to Donald Trump in a publisher article paragraph. The record date is article publication, not a verified time of utterance; other article context is omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.",
+    "assessment": "unverified-claim",
+    "checked_at": "2026-11-21T20:35:22.451298+00:00",
+    "attribution": "source-matched"
   }
 ]

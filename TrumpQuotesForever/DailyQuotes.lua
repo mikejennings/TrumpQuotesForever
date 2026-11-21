@@ -131,6 +131,8 @@ local additions = {
     "We were not the greatest country two years ago, but now we're the greatest country again.",
     -- 1076: public-1cc7c67d5e5ebb1cad3a; 2026-11-17
     "We make the greatest submarines anywhere in the world and we're working with Australia and others on that.",
+    -- 1077: public-0fdfe93f76ba1756d6f4; 2026-11-21
+    "They’re just amazingly talented. Many of them could be in any of the greatest orchestras in the world,",
 }
 
 for _, quote in ipairs(additions) do

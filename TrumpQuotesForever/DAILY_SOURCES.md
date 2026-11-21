@@ -645,3 +645,13 @@ Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled
 Type: speech; assessment: unverified-claim; checked: 2026-11-17T22:28:40.701839+00:00.
 
 Contiguous excerpt from a Roll Call Factba.se transcript turn explicitly labeled Donald Trump. Other speakers and transcript metadata are excluded; other remarks in the turn are omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
+
+## 1077. 2026-11-21 — public-0fdfe93f76ba1756d6f4
+
+> They’re just amazingly talented. Many of them could be in any of the greatest orchestras in the world,
+
+[Original source](https://www.theguardian.com/us-news/live/2026/nov/20/donald-trump-brooke-rollins-religion-sean-cairncross-senate-alaska-white-house-press-conference-us-politics-latest-news-updates) · [Attribution evidence](https://www.theguardian.com/us-news/live/2026/nov/20/donald-trump-brooke-rollins-religion-sean-cairncross-senate-alaska-white-house-press-conference-us-politics-latest-news-updates)
+
+Type: news_report; assessment: unverified-claim; checked: 2026-11-21T20:35:22.451298+00:00.
+
+Direct quotation explicitly attributed to Donald Trump in a publisher article paragraph. The record date is article publication, not a verified time of utterance; other article context is omitted. Source matching is not independent authentication or fact checking. Automatic quote-only acceptance was authorized by the maintainer.
