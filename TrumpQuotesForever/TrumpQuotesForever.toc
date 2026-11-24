@@ -2,7 +2,7 @@
 ## Title: Trump Quotes Forever
 ## Notes: Random quotes for General chat on WoW Forever.
 ## Author: TQ Maintainers
-## Version: 0.8.4
+## Version: 0.8.5
 ## SavedVariables: TrumpQuotesForeverDB
 
 Quotes.lua
